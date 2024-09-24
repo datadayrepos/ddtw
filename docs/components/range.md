@@ -1,9 +1,9 @@
 <script setup>
-import FwbRangeExample from './range/examples/FwbRangeExample.vue'
-import FwbRangeExampleDisabled from './range/examples/FwbRangeExampleDisabled.vue'
-import FwbRangeExampleMinMax from './range/examples/FwbRangeExampleMinMax.vue'
-import FwbRangeExampleSize from './range/examples/FwbRangeExampleSize.vue'
-import FwbRangeExampleSteps from './range/examples/FwbRangeExampleSteps.vue'
+import DdtwRangeExample from './range/examples/DdtwRangeExample.vue'
+import DdtwRangeExampleDisabled from './range/examples/DdtwRangeExampleDisabled.vue'
+import DdtwRangeExampleMinMax from './range/examples/DdtwRangeExampleMinMax.vue'
+import DdtwRangeExampleSize from './range/examples/DdtwRangeExampleSize.vue'
+import DdtwRangeExampleSteps from './range/examples/DdtwRangeExampleSteps.vue'
 </script>
 
 # Vue Toggle Range - Flowbite
@@ -17,16 +17,16 @@ Original reference: [https://flowbite.com/docs/forms/range/](https://flowbite.co
 
 ## Default
 
-<fwb-range-example />
+<ddtw-range-example />
 ```vue
 <template>
-  <fwb-range v-model="value" />
+  <ddtw-range v-model="value" />
   <pre>Current value: {{ value }}</pre>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbRange } from 'flowbite-vue'
+import { DdtwRange } from '@datadayrepos/ddtw-vue'
 
 const value = ref(10)
 </script>
@@ -34,38 +34,38 @@ const value = ref(10)
 
 ## Disabled state
 
-<fwb-range-example-disabled />
+<ddtw-range-example-disabled />
 ```vue
 <template>
-  <fwb-range v-model="value" disabled label="Disabled range" />
+  <ddtw-range v-model="value" disabled label="Disabled range" />
 </template>
 ```
 
 ## Min and Max
 
-<fwb-range-example-min-max />
+<ddtw-range-example-min-max />
 ```vue
 <template>
-  <fwb-range v-model="value" :max="15" :min="5" label="Min-max range" />
+  <ddtw-range v-model="value" :max="15" :min="5" label="Min-max range" />
 </template>
 ```
 
 ## Steps
 
-<fwb-range-example-steps />
+<ddtw-range-example-steps />
 ```vue
 <template>
-  <fwb-range v-model="value" :steps="5" label="Steps range" />
+  <ddtw-range v-model="value" :steps="5" label="Steps range" />
 </template>
 ```
 
 ## Sizes
 
-<fwb-range-example-size />
+<ddtw-range-example-size />
 ```vue
 <template>
-  <fwb-range v-model="value1" label="Small range" size="sm" />
-  <fwb-range v-model="value2" label="Medium range" size="md" />
-  <fwb-range v-model="value3" label="Large range" size="lg" />
+  <ddtw-range v-model="value1" label="Small range" size="sm" />
+  <ddtw-range v-model="value2" label="Medium range" size="md" />
+  <ddtw-range v-model="value3" label="Large range" size="lg" />
 </template>
 ```

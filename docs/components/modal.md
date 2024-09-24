@@ -1,9 +1,9 @@
 <script setup>
-import FwbModalExample from './modal/examples/FwbModalExample.vue'
-import FwbModalExampleSize from './modal/examples/FwbModalExampleSize.vue'
-import FwbModalExampleEscapable from './modal/examples/FwbModalExampleEscapable.vue'
-import FwbModalExamplePersistent from './modal/examples/FwbModalExamplePersistent.vue'
-import FwbModalExamplePosition from './modal/examples/FwbModalExamplePosition.vue'
+import DdtwModalExample from './modal/examples/DdtwModalExample.vue'
+import DdtwModalExampleSize from './modal/examples/DdtwModalExampleSize.vue'
+import DdtwModalExampleEscapable from './modal/examples/DdtwModalExampleEscapable.vue'
+import DdtwModalExamplePersistent from './modal/examples/DdtwModalExamplePersistent.vue'
+import DdtwModalExamplePosition from './modal/examples/DdtwModalExamplePosition.vue'
 </script>
 # Vue Modal - Flowbite
 
@@ -21,14 +21,14 @@ Get started with multiple sizes, colors, and styles built with the utility class
 
 ## Default modal
 
-<fwb-modal-example />
+<ddtw-modal-example />
 ```vue
 <template>
-  <fwb-button @click="showModal">
+  <ddtw-button @click="showModal">
     Open modal
-  </fwb-button>
+  </ddtw-button>
 
-  <fwb-modal v-if="isShowModal" @close="closeModal">
+  <ddtw-modal v-if="isShowModal" @close="closeModal">
     <template #header>
       <div class="flex items-center text-lg">
         Terms of Service
@@ -44,20 +44,20 @@ Get started with multiple sizes, colors, and styles built with the utility class
     </template>
     <template #footer>
       <div class="flex justify-between">
-        <fwb-button @click="closeModal" color="alternative">
+        <ddtw-button @click="closeModal" color="alternative">
           Decline
-        </fwb-button>
-        <fwb-button @click="closeModal" color="green">
+        </ddtw-button>
+        <ddtw-button @click="closeModal" color="green">
           I accept
-        </fwb-button>
+        </ddtw-button>
       </div>
     </template>
-  </fwb-modal>
+  </ddtw-modal>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbButton, FwbModal } from 'flowbite-vue'
+import { DdtwButton, DdtwModal } from '@datadayrepos/ddtw-vue'
 
 const isShowModal = ref(false)
 
@@ -78,17 +78,17 @@ You can use four different modal sizing options starting from small to extra lar
 
 The default value is: `2xl`
 
-<fwb-modal-example-size />
+<ddtw-modal-example-size />
 ```vue
 <template>
-  <fwb-modal size="xs" />
-  <fwb-modal size="md" />
-  <fwb-modal size="xl" />
-  <fwb-modal size="5xl" />
+  <ddtw-modal size="xs" />
+  <ddtw-modal size="md" />
+  <ddtw-modal size="xl" />
+  <ddtw-modal size="5xl" />
 </template>
 
 <script setup>
-import { FwbModal } from 'flowbite-vue'
+import { DdtwModal } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
@@ -100,22 +100,22 @@ The `position` prop allows you to control the placement of the modal on the scre
 
 The default value is: `center`
 
-<fwb-modal-example-position />
+<ddtw-modal-example-position />
 ```vue
 <template>
-  <fwb-modal position="top-start" />
-  <fwb-modal position="top-center" />
-  <fwb-modal position="top-end" />
-  <fwb-modal position="center-start" />
-  <fwb-modal position="center" />
-  <fwb-modal position="center-end" />
-  <fwb-modal position="bottom-start" />
-  <fwb-modal position="bottom-center" />
-  <fwb-modal position="bottom-end" />
+  <ddtw-modal position="top-start" />
+  <ddtw-modal position="top-center" />
+  <ddtw-modal position="top-end" />
+  <ddtw-modal position="center-start" />
+  <ddtw-modal position="center" />
+  <ddtw-modal position="center-end" />
+  <ddtw-modal position="bottom-start" />
+  <ddtw-modal position="bottom-center" />
+  <ddtw-modal position="bottom-end" />
 </template>
 
 <script setup>
-import { FwbModal } from 'flowbite-vue'
+import { DdtwModal } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
@@ -131,15 +131,15 @@ This means that you may close the modal by
 
 In some situations, your user may be required to interact with the modal content. If this is the case, you can set the `not-escapable` property to `true`. The developer can then choose when they want to close the modal.
 
-<fwb-modal-example-escapable />
+<ddtw-modal-example-escapable />
 ```vue
 <template>
-  <fwb-modal />
-  <fwb-modal not-escapable />
+  <ddtw-modal />
+  <ddtw-modal not-escapable />
 </template>
 
 <script setup>
-import { FwbModal } from 'flowbite-vue'
+import { DdtwModal } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
@@ -147,14 +147,14 @@ import { FwbModal } from 'flowbite-vue'
 
 Clicking outside of the element or pressing esc key will not send `close` event.
 
-<fwb-modal-example-persistent />
+<ddtw-modal-example-persistent />
 ```vue
 <template>
-  <fwb-modal persistent />
+  <ddtw-modal persistent />
 </template>
 
 <script setup>
-import { FwbModal } from 'flowbite-vue'
+import { DdtwModal } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 

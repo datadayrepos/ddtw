@@ -1,7 +1,7 @@
 <script setup>
-import FwbCardExample from './card/examples/FwbCardExample.vue'
-import FwbCardExampleImage from './card/examples/FwbCardExampleImage.vue'
-import FwbCardExampleHorizontal from './card/examples/FwbCardExampleHorizontal.vue'
+import DdtwCardExample from './card/examples/DdtwCardExample.vue'
+import DdtwCardExampleImage from './card/examples/DdtwCardExampleImage.vue'
+import DdtwCardExampleHorizontal from './card/examples/DdtwCardExampleHorizontal.vue'
 </script>
 # Vue Card - Flowbite
 
@@ -17,10 +17,10 @@ Use these responsive card components to show data entries and information to you
 
 ## Prop - default
 
-<fwb-card-example />
+<ddtw-card-example />
 ```vue
 <template>
-    <fwb-card href="#">
+    <ddtw-card href="#">
       <div class="p-5">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           Noteworthy technology acquisitions 2021
@@ -29,20 +29,20 @@ Use these responsive card components to show data entries and information to you
           Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
         </p>
       </div>
-    </fwb-card>
+    </ddtw-card>
 </template>
 
 <script setup>
-import { FwbCard } from 'flowbite-vue'
+import { DdtwCard } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Prop - image
 
-<fwb-card-example-image />
+<ddtw-card-example-image />
 ```vue
 <template>
-    <fwb-card
+    <ddtw-card
       img-alt="Desk"
       img-src="https://flowbite.com/docs/images/blog/image-1.jpg"
       variant="image"
@@ -55,20 +55,20 @@ import { FwbCard } from 'flowbite-vue'
           Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
         </p>
       </div>
-    </fwb-card>
+    </ddtw-card>
 </template>
 
 <script setup>
-import { FwbCard } from 'flowbite-vue'
+import { DdtwCard } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Prop - horizontal
 
-<fwb-card-example-horizontal />
+<ddtw-card-example-horizontal />
 ```vue
 <template>
-    <fwb-card
+    <ddtw-card
       img-alt="Desk"
       img-src="https://flowbite.com/docs/images/blog/image-4.jpg"
       variant="horizontal"
@@ -81,10 +81,10 @@ import { FwbCard } from 'flowbite-vue'
           Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
         </p>
       </div>
-    </fwb-card>
+    </ddtw-card>
 </template>
 
 <script setup>
-import { FwbCard } from 'flowbite-vue'
+import { DdtwCard } from '@datadayrepos/ddtw-vue'
 </script>
 ```

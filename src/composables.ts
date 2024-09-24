@@ -1,3 +1,3 @@
-import { useToast } from '@/components/FwbToast/composables/useToast'
+import { useToast } from '/@/components/DdtwToast/composables/useToast'
 
 export { useToast }

@@ -1,7 +1,7 @@
 <script setup>
-import FwbAExample from './typography/link/FwbAExample.vue'
-import FwbAExampleParagraph from './typography/link/FwbAExampleParagraph.vue'
-import FwbAExampleCustom from './typography/link/FwbAExampleCustom.vue'
+import DdtwAExample from './typography/link/DdtwAExample.vue'
+import DdtwAExampleParagraph from './typography/link/DdtwAExampleParagraph.vue'
+import DdtwAExampleCustom from './typography/link/DdtwAExampleCustom.vue'
 </script>
 
 # Vue Links - Flowbite
@@ -14,14 +14,16 @@ Use this example to set default styles to an inline link element.
 
 ```vue
 <template>
-  <fwb-a href="#"> Flowbite-vue </fwb-a>
+  <DdtwA href="#">
+    Flowbite-vue
+  </DdtwA>
 </template>
 
 <script setup>
-import { FwbA } from 'flowbite-vue'
+import { DdtwA } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-a-example />
+<ddtw-a-example />
 
 ## Paragraph link
 
@@ -29,19 +31,23 @@ Use this example to set a link inside a paragraph with an underline style.
 
 ```vue
 <template>
-  <fwb-p>
-    The free updates that will be provided is based on the <fwb-a href="#"
-    class="underline hover:no-underline">roadmap</fwb-a> that we have laid
+  <DdtwP>
+    The free updates that will be provided is based on the <DdtwA
+      href="#"
+      class="underline hover:no-underline"
+    >
+      roadmap
+    </DdtwA> that we have laid
     out for this project. It is also possible that we will provide
     extra updates outside of the roadmap as well.
-  </fwb-p>
+  </DdtwP>
 </template>
 
 <script setup>
-import { FwbA, FwbP } from 'flowbite-vue'
+import { DdtwA, DdtwP } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-a-example-paragraph />
+<ddtw-a-example-paragraph />
 
 ## Custom classes
 
@@ -49,11 +55,13 @@ Use `class` attribute prop to apply the tailwind classes.
 
 ```vue
 <template>
-  <fwb-a class="text-orange-500 italic" href="#"> Flowbite-vue </fwb-a>
+  <DdtwA class="text-orange-500 italic" href="#">
+    Flowbite-vue
+  </DdtwA>
 </template>
 
 <script setup>
-import { FwbA } from 'flowbite-vue'
+import { DdtwA } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-a-example-custom />
+<ddtw-a-example-custom />

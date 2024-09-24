@@ -1,10 +1,10 @@
 <script setup>
-import FwbSelectExample from './select/examples/FwbSelectExample.vue'
-import FwbSelectExampleDisabled from './select/examples/FwbSelectExampleDisabled.vue'
-import FwbSelectExampleHelper from './select/examples/FwbSelectExampleHelper.vue'
-import FwbSelectExampleSize from './select/examples/FwbSelectExampleSize.vue'
-import FwbSelectExampleUnderlined from './select/examples/FwbSelectExampleUnderlined.vue'
-import FwbSelectExampleValidation from './select/examples/FwbSelectExampleValidation.vue'
+import DdtwSelectExample from './select/examples/DdtwSelectExample.vue'
+import DdtwSelectExampleDisabled from './select/examples/DdtwSelectExampleDisabled.vue'
+import DdtwSelectExampleHelper from './select/examples/DdtwSelectExampleHelper.vue'
+import DdtwSelectExampleSize from './select/examples/DdtwSelectExampleSize.vue'
+import DdtwSelectExampleUnderlined from './select/examples/DdtwSelectExampleUnderlined.vue'
+import DdtwSelectExampleValidation from './select/examples/DdtwSelectExampleValidation.vue'
 </script>
 
 # Vue Select - Flowbite
@@ -21,10 +21,10 @@ The select input component can be used to gather information from users based on
 
 ## Default
 
-<fwb-select-example />
+<ddtw-select-example />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
@@ -33,7 +33,7 @@ The select input component can be used to gather information from users based on
 
 <script setup>
 import { ref } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
+import { DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [
@@ -46,10 +46,10 @@ const countries = [
 
 ## Disabled
 
-<fwb-select-example-disabled />
+<ddtw-select-example-disabled />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     disabled
@@ -60,7 +60,7 @@ const countries = [
 
 <script setup>
 import { ref } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
+import { DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [
@@ -73,10 +73,10 @@ const countries = [
 
 ## Underlined
 
-<fwb-select-example-underlined />
+<ddtw-select-example-underlined />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
@@ -86,7 +86,7 @@ const countries = [
 
 <script setup>
 import { ref } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
+import { DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [
@@ -99,22 +99,22 @@ const countries = [
 
 ## Size
 
-<fwb-select-example-size />
+<ddtw-select-example-size />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
     size="sm"
   />
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
     size="md"
   />
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
@@ -124,7 +124,7 @@ const countries = [
 
 <script setup>
 import { ref } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
+import { DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [
@@ -137,26 +137,26 @@ const countries = [
 
 ## Slot - Helper
 
-<fwb-select-example-helper />
+<ddtw-select-example-helper />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
   >
     <template #helper>
       We'll never share your details. Read our
-      <fwb-a href="#" color="text-blue-600 dark:text-blue-500">
+      <ddtw-a href="#" color="text-blue-600 dark:text-blue-500">
         Privacy Policy
-      </fwb-a>.
+      </ddtw-a>.
     </template>
-  </fwb-input>
+  </ddtw-input>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbA, FwbSelect } from 'flowbite-vue'
+import { DdtwA, DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [
@@ -172,17 +172,17 @@ const countries = [
 - Set validation status via `validationStatus` prop, which accepts `'success'` or `'error'`.
 - Add validation message via `validationMessage` slot.
 
-<fwb-select-example-validation />
+<ddtw-select-example-validation />
 ```vue
 <template>
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
     validation-status="success"
   />
   <hr class="mt-4 border-0">
-  <fwb-select
+  <ddtw-select
     v-model="selected"
     :options="countries"
     label="Select a country"
@@ -191,12 +191,12 @@ const countries = [
     <template #validationMessage>
       Please select a country
     </template>
-  </fwb-select>
+  </ddtw-select>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbSelect } from 'flowbite-vue'
+import { DdtwSelect } from '@datadayrepos/ddtw-vue'
 
 const selected = ref('')
 const countries = [

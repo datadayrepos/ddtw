@@ -1,9 +1,9 @@
 <script setup>
-import FwbBadgeExample from './badge/examples/FwbBadgeExample.vue'
-import FwbBadgeExampleSize from './badge/examples/FwbBadgeExampleSize.vue'
-import FwbBadgeExampleLink from './badge/examples/FwbBadgeExampleLink.vue'
-import FwbBadgeExampleIcon from './badge/examples/FwbBadgeExampleIcon.vue'
-import FwbBadgeExampleIconOnly from './badge/examples/FwbBadgeExampleIconOnly.vue'
+import DdtwBadgeExample from './badge/examples/DdtwBadgeExample.vue'
+import DdtwBadgeExampleSize from './badge/examples/DdtwBadgeExampleSize.vue'
+import DdtwBadgeExampleLink from './badge/examples/DdtwBadgeExampleLink.vue'
+import DdtwBadgeExampleIcon from './badge/examples/DdtwBadgeExampleIcon.vue'
+import DdtwBadgeExampleIconOnly from './badge/examples/DdtwBadgeExampleIconOnly.vue'
 </script>
 # Vue Badge - Flowbite
 
@@ -20,42 +20,42 @@ Alternatively, badges can also be used as standalone elements that link to a cer
 ## Default badge
 Prop – type
 
-<fwb-badge-example />
+<ddtw-badge-example />
 ```vue
 <template>
-  <fwb-badge>Default</fwb-badge>
-  <fwb-badge type="dark">Dark</fwb-badge>
-  <fwb-badge type="red">Red</fwb-badge>
-  <fwb-badge type="green">Green</fwb-badge>
-  <fwb-badge type="yellow">Yellow</fwb-badge>
-  <fwb-badge type="indigo">Indigo</fwb-badge>
-  <fwb-badge type="purple">Purple</fwb-badge>
-  <fwb-badge type="pink">Pink</fwb-badge>
+  <ddtw-badge>Default</ddtw-badge>
+  <ddtw-badge type="dark">Dark</ddtw-badge>
+  <ddtw-badge type="red">Red</ddtw-badge>
+  <ddtw-badge type="green">Green</ddtw-badge>
+  <ddtw-badge type="yellow">Yellow</ddtw-badge>
+  <ddtw-badge type="indigo">Indigo</ddtw-badge>
+  <ddtw-badge type="purple">Purple</ddtw-badge>
+  <ddtw-badge type="pink">Pink</ddtw-badge>
 </template>
 
 <script setup>
-import { FwbBadge } from 'flowbite-vue'
+import { DdtwBadge } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Large badges
 Prop – size
 
-<fwb-badge-example-size />
+<ddtw-badge-example-size />
 ```vue
 <template>
-  <fwb-badge size="xs">Default</fwb-badge>
-  <fwb-badge size="xs" type="dark">Dark</fwb-badge>
-  <fwb-badge size="xs" type="red">Red</fwb-badge>
-  <fwb-badge size="xs" type="green">Green</fwb-badge>
-  <fwb-badge size="sm" type="yellow">Yellow</fwb-badge>
-  <fwb-badge size="sm" type="indigo">Indigo</fwb-badge>
-  <fwb-badge size="sm" type="purple">Purple</fwb-badge>
-  <fwb-badge size="sm" type="pink">Pink</fwb-badge>
+  <ddtw-badge size="xs">Default</ddtw-badge>
+  <ddtw-badge size="xs" type="dark">Dark</ddtw-badge>
+  <ddtw-badge size="xs" type="red">Red</ddtw-badge>
+  <ddtw-badge size="xs" type="green">Green</ddtw-badge>
+  <ddtw-badge size="sm" type="yellow">Yellow</ddtw-badge>
+  <ddtw-badge size="sm" type="indigo">Indigo</ddtw-badge>
+  <ddtw-badge size="sm" type="purple">Purple</ddtw-badge>
+  <ddtw-badge size="sm" type="pink">Pink</ddtw-badge>
 </template>
 
 <script setup>
-import { FwbBadge } from 'flowbite-vue'
+import { DdtwBadge } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
@@ -63,19 +63,19 @@ import { FwbBadge } from 'flowbite-vue'
 You can also use badges as anchor elements to link to another page.
 Prop – href
 
-<fwb-badge-example-link />
+<ddtw-badge-example-link />
 ```vue
 <template>
-  <fwb-badge href="#">
+  <ddtw-badge href="#">
     Link
-  </fwb-badge>
-  <fwb-badge href="#" size="sm">
+  </ddtw-badge>
+  <ddtw-badge href="#" size="sm">
     Link small
-  </fwb-badge>
+  </ddtw-badge>
 </template>
 
 <script setup>
-import { FwbBadge } from 'flowbite-vue'
+import { DdtwBadge } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
@@ -83,61 +83,61 @@ import { FwbBadge } from 'flowbite-vue'
 You can also use SVG icons inside the badge elements.
 slot icon
 
-<fwb-badge-example-icon />
+<ddtw-badge-example-icon />
 ```vue
 <template>
-  <fwb-badge>
+  <ddtw-badge>
     <template #icon>
       <svg aria-hidden="true" class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" fill-rule="evenodd" />
       </svg>
     </template>
     Default
-  </fwb-badge>
-  <fwb-badge size="sm" type="dark">
+  </ddtw-badge>
+  <ddtw-badge size="sm" type="dark">
     <template #icon>
       <svg aria-hidden="true" class="mr-1 w-3 h-3" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" fill-rule="evenodd" />
       </svg>
     </template>
     Dark
-  </fwb-badge>
+  </ddtw-badge>
 </template>
 
 <script setup>
-import { FwbBadge } from 'flowbite-vue'
+import { DdtwBadge } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Badge with icon only
 
-<fwb-badge-example-icon-only />
+<ddtw-badge-example-icon-only />
 ```vue
 <template>
-  <fwb-badge>
+  <ddtw-badge>
     <template #icon>
       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-badge>
-  <fwb-badge type="dark">
+  </ddtw-badge>
+  <ddtw-badge type="dark">
     <template #icon>
       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-badge>
-  <fwb-badge size="sm" type="green">
+  </ddtw-badge>
+  <ddtw-badge size="sm" type="green">
     <template #icon>
       <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-badge>
+  </ddtw-badge>
 </template>
 
 <script setup>
-import { FwbBadge } from 'flowbite-vue'
+import { DdtwBadge } from '@datadayrepos/ddtw-vue'
 </script>
 ```

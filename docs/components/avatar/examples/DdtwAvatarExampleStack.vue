@@ -1,0 +1,61 @@
+<template>
+  <div class="vp-raw grid gap-2">
+    <DdtwAvatarStack>
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+        rounded
+        stacked
+      />
+    </DdtwAvatarStack>
+    <DdtwAvatarStack>
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-1.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-3.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatar
+        img="https://flowbite.com/docs/images/people/profile-picture-4.jpg"
+        rounded
+        stacked
+      />
+      <DdtwAvatarStackCounter
+        href="#"
+        :total="99"
+      />
+    </DdtwAvatarStack>
+  </div>
+</template>
+
+<script setup>
+import { DdtwAvatar, DdtwAvatarStack, DdtwAvatarStackCounter } from '../../../../src/index'
+</script>

@@ -1,22 +1,22 @@
 <script setup>
-import FwbCheckboxExample from './checkbox/examples/FwbCheckboxExample.vue'
-import FwbCheckboxExampleChecked from './checkbox/examples/FwbCheckboxExampleChecked.vue'
-import FwbCheckboxExampleDisabled from './checkbox/examples/FwbCheckboxExampleDisabled.vue'
-import FwbCheckboxExampleLink from './checkbox/examples/FwbCheckboxExampleLink.vue'
+import DdtwCheckboxExample from './checkbox/examples/DdtwCheckboxExample.vue'
+import DdtwCheckboxExampleChecked from './checkbox/examples/DdtwCheckboxExampleChecked.vue'
+import DdtwCheckboxExampleDisabled from './checkbox/examples/DdtwCheckboxExampleDisabled.vue'
+import DdtwCheckboxExampleLink from './checkbox/examples/DdtwCheckboxExampleLink.vue'
 </script>
 # Vue Checkbox - Flowbite
 
 ## Default checkbox
 
-<fwb-checkbox-example />
+<ddtw-checkbox-example />
 ```vue
 <template>
-  <fwb-checkbox v-model="check" label="Default checkbox" />
+  <ddtw-checkbox v-model="check" label="Default checkbox" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbCheckbox } from 'flowbite-vue'
+import { DdtwCheckbox } from '@datadayrepos/ddtw-vue'
 
 const check = ref(false)
 </script>
@@ -24,15 +24,15 @@ const check = ref(false)
 
 ## Disabled checkbox
 
-<fwb-checkbox-example-disabled />
+<ddtw-checkbox-example-disabled />
 ```vue
 <template>
-  <fwb-checkbox v-model="check" disabled label="Disabled checkbox" />
+  <ddtw-checkbox v-model="check" disabled label="Disabled checkbox" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbCheckbox } from 'flowbite-vue'
+import { DdtwCheckbox } from '@datadayrepos/ddtw-vue'
 
 const check = ref(false)
 </script>
@@ -40,15 +40,15 @@ const check = ref(false)
 
 ## Checked checkbox
 
-<fwb-checkbox-example-checked />
+<ddtw-checkbox-example-checked />
 ```vue
 <template>
-  <fwb-checkbox v-model="check" label="Checked checkbox" />
+  <ddtw-checkbox v-model="check" label="Checked checkbox" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbCheckbox } from 'flowbite-vue'
+import { DdtwCheckbox } from '@datadayrepos/ddtw-vue'
 
 const check = ref(true)
 </script>
@@ -56,19 +56,19 @@ const check = ref(true)
 
 ## Link with checkbox
 
-<fwb-checkbox-example-link />
+<ddtw-checkbox-example-link />
 ```vue
 <template>
-  <fwb-checkbox v-model="check">
-    <fwb-a href="#">
+  <ddtw-checkbox v-model="check">
+    <ddtw-a href="#">
       I agree with the terms and conditions.
-    </fwb-a>
-  </fwb-checkbox>
+    </ddtw-a>
+  </ddtw-checkbox>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbA, FwbCheckbox } from 'flowbite-vue'
+import { DdtwA, DdtwCheckbox } from '@datadayrepos/ddtw-vue'
 
 const check = ref(false)
 </script>

@@ -1,4 +1,4 @@
-# Flowbite Vue - Quickstart
+# Ddtw Vue - Quickstart
 
 Get started with Flowbite by including it into your project using NPM
 
@@ -8,22 +8,22 @@ Flowbite is a library of components built on top of the utility-classes from Tai
 
 Make sure that you have [Node.js](https://nodejs.org/en/) and [Tailwind CSS](https://tailwindcss.com/) installed.
 
-1. Install `flowbite` and `flowbite-vue` as a dependency using NPM by running the following command:
+1. Install `flowbite` and `@datadayrepos/ddtw-vue` as a dependency using NPM by running the following command:
 
 ```bash
-npm i flowbite flowbite-vue
+npm i flowbite @datadayrepos/ddtw-vue
 ```
 
-2. Require Flowbite as a plugin inside the tailwind.config.js and add flowbite-vue dist folder to tailwind content:
+2. Require Flowbite as a plugin inside the tailwind.config.js and add @datadayrepos/ddtw-vue dist folder to tailwind content:
 
 ```javascript
 module.exports = {
   content: [
-    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx,vue}',
-    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}'
+    'node_modules/@datadayrepos/ddtw-vue/**/*.{js,mjs,cjs,jsx,ts,tsx,vue}',
+    'node_modules/flowbite/**/*.{js,jsx,ts,tsx}' // only is using JS components
   ],
   plugins: [
-      require('flowbite/plugin')
+    require('flowbite/plugin')// only is using JS components
   ],
   theme: {}
 }
@@ -31,28 +31,29 @@ module.exports = {
 
 3. Import Flowbite Vue styles:
 ```javascript
-//in your `main.js` file
-import '../node_modules/flowbite-vue/dist/index.css'
+// in your `main.js` file
+// eslint-disable-next-line antfu/no-import-node-modules-by-path, antfu/no-import-dist
+import '../node_modules/@datadayrepos/ddtw-vue/dist/index.css' // only is using JS components
 ```
 ```css
 /* or in your `app.css` file */
-@import '/node_modules/flowbite-vue/dist/index.css';
+@import '/node_modules/@datadayrepos/ddtw-vue/dist/index.css';
 ```
 
-4. Now you can use `flowbite-vue` anywhere in your project and build awesome interfaces:
+4. Now you can use `@datadayrepos/ddtw-vue` anywhere in your project and build awesome interfaces:
 ```vue
 <template>
-  <fwb-dropdown text="Click me" placement="top">
-    <fwb-list-group>
-      <fwb-list-group-item>Item #1</fwb-list-group-item>
-      <fwb-list-group-item>Item #2</fwb-list-group-item>
-      <fwb-list-group-item>Item #3</fwb-list-group-item>
-    </fwb-list-group>
-  </fwb-dropdown>
+  <DdtwDropdown text="Click me" placement="top">
+    <DdtwListGroup>
+      <DdtwListGroupItem>Item #1</DdtwListGroupItem>
+      <DdtwListGroupItem>Item #2</DdtwListGroupItem>
+      <DdtwListGroupItem>Item #3</DdtwListGroupItem>
+    </DdtwListGroup>
+  </DdtwDropdown>
 </template>
 
 <script setup>
-import { FwbDropdown, FwbListGroup, FwbListGroupItem } from 'flowbite-vue'
+import { DdtwDropdown, DdtwListGroup, DdtwListGroupItem } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 

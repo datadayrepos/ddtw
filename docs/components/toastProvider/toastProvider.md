@@ -1,5 +1,5 @@
 <script setup>
-import FwbToastProviderExample from './examples/FwbToastProviderExample.vue'
+import DdtwToastProviderExample from './examples/DdtwToastProviderExample.vue'
 </script>
 
 # Vue Toast Provider - Flowbite
@@ -8,4 +8,4 @@ import FwbToastProviderExample from './examples/FwbToastProviderExample.vue'
 WIP, Do not use it in production
 :::
 
-<fwb-toast-provider-example />
+<ddtw-toast-provider-example />

@@ -1,12 +1,12 @@
 <script setup>
-import FwbInputExample from './input/examples/FwbInputExample.vue'
-import FwbInputExampleSize from './input/examples/FwbInputExampleSize.vue'
-import FwbInputExampleDisabled from './input/examples/FwbInputExampleDisabled.vue'
-import FwbInputExampleHelper from './input/examples/FwbInputExampleHelper.vue'
-import FwbInputExamplePrefix from './input/examples/FwbInputExamplePrefix.vue'
-import FwbInputExampleSuffix from './input/examples/FwbInputExampleSuffix.vue'
-import FwbInputExampleRequired from './input/examples/FwbInputExampleRequired.vue'
-import FwbInputExampleValidation from './input/examples/FwbInputExampleValidation.vue'
+import DdtwInputExample from './input/examples/DdtwInputExample.vue'
+import DdtwInputExampleSize from './input/examples/DdtwInputExampleSize.vue'
+import DdtwInputExampleDisabled from './input/examples/DdtwInputExampleDisabled.vue'
+import DdtwInputExampleHelper from './input/examples/DdtwInputExampleHelper.vue'
+import DdtwInputExamplePrefix from './input/examples/DdtwInputExamplePrefix.vue'
+import DdtwInputExampleSuffix from './input/examples/DdtwInputExampleSuffix.vue'
+import DdtwInputExampleRequired from './input/examples/DdtwInputExampleRequired.vue'
+import DdtwInputExampleValidation from './input/examples/DdtwInputExampleValidation.vue'
 </script>
 
 # Vue Input - Flowbite
@@ -25,10 +25,10 @@ On this page you will find all of the input types based on multiple variants, st
 
 ## Default
 
-<fwb-input-example />
+<ddtw-input-example />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="name"
     placeholder="enter your first name"
     label="First name"
@@ -37,7 +37,7 @@ On this page you will find all of the input types based on multiple variants, st
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
@@ -45,17 +45,17 @@ const name = ref('')
 
 ## Size
 
-<fwb-input-example-size />
+<ddtw-input-example-size />
 ```vue
 <template>
-  <fwb-input v-model="name" label="Small" placeholder="enter your name" size="sm" />
-  <fwb-input v-model="name" label="Medium" placeholder="enter your name" size="md" />
-  <fwb-input v-model="name" label="Large" placeholder="enter your name" size="lg" />
+  <ddtw-input v-model="name" label="Small" placeholder="enter your name" size="sm" />
+  <ddtw-input v-model="name" label="Medium" placeholder="enter your name" size="md" />
+  <ddtw-input v-model="name" label="Large" placeholder="enter your name" size="lg" />
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
@@ -63,10 +63,10 @@ const name = ref('')
 
 ## Disabled
 
-<fwb-input-example-disabled />
+<ddtw-input-example-disabled />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="name"
     disabled
     label="First name"
@@ -76,7 +76,7 @@ const name = ref('')
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
@@ -84,10 +84,10 @@ const name = ref('')
 
 ## Required
 
-<fwb-input-example-required />
+<ddtw-input-example-required />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="name"
     label="First name"
     placeholder="enter your first name"
@@ -97,7 +97,7 @@ const name = ref('')
 
 <script setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
@@ -105,26 +105,26 @@ const name = ref('')
 
 ## Slot - Helper
 
-<fwb-input-example-helper />
+<ddtw-input-example-helper />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="name"
     label="First name"
     placeholder="enter your first name"
   >
     <template #helper>
       We'll never share your details. Read our
-      <fwb-a href="#" color="text-blue-600 dark:text-blue-500">
+      <ddtw-a href="#" color="text-blue-600 dark:text-blue-500">
         Privacy Policy
-      </fwb-a>.
+      </ddtw-a>.
     </template>
-  </fwb-input>
+  </ddtw-input>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbA, FwbInput } from 'flowbite-vue'
+import { DdtwA, DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
@@ -132,31 +132,31 @@ const name = ref('')
 
 ## Slot - Prefix
 
-<fwb-input-example-prefix />
+<ddtw-input-example-prefix />
 ```vue
 <template>
-  <fwb-input v-model="name" label="Search" placeholder="enter your search query">
+  <ddtw-input v-model="name" label="Search" placeholder="enter your search query">
     <template #prefix>
       <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
       </svg>
     </template>
-  </fwb-input>
+  </ddtw-input>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const name = ref('')
 </script>
 ```
 
 ## Slot - Suffix
-<fwb-input-example-suffix />
+<ddtw-input-example-suffix />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="query"
     label="Search"
     placeholder="enter your search query"
@@ -168,14 +168,14 @@ const name = ref('')
       </svg>
     </template>
     <template #suffix>
-      <fwb-button>Search</fwb-button>
+      <ddtw-button>Search</ddtw-button>
     </template>
-  </fwb-input>
+  </ddtw-input>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbButton, FwbInput } from 'flowbite-vue'
+import { DdtwButton, DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const query = ref('')
 </script>
@@ -186,10 +186,10 @@ const query = ref('')
 - Set validation status via `validationStatus` prop, which accepts `'success'` or `'error'`.
 - Add validation message via `validationMessage` slot.
 
-<fwb-input-example-validation />
+<ddtw-input-example-validation />
 ```vue
 <template>
-  <fwb-input
+  <ddtw-input
     v-model="email"
     required
     placeholder="enter your email address"
@@ -197,7 +197,7 @@ const query = ref('')
     validation-status="success"
   />
   <hr class="mt-4 border-0">
-  <fwb-input
+  <ddtw-input
     v-model="email"
     required
     placeholder="enter your email address"
@@ -207,12 +207,12 @@ const query = ref('')
     <template #validationMessage>
       Please enter a valid email address
     </template>
-  </fwb-input>
+  </ddtw-input>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { FwbInput } from 'flowbite-vue'
+import { DdtwInput } from '@datadayrepos/ddtw-vue'
 
 const email = ref('')
 </script>

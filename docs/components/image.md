@@ -1,10 +1,10 @@
 <script setup>
-import FwbImgExample from './typography/image/FwbImgExample.vue'
-import FwbImgExampleCaption from './typography/image/FwbImgExampleCaption.vue'
-import FwbImgExampleSize from './typography/image/FwbImgExampleSize.vue'
-import FwbImgExampleAlign from './typography/image/FwbImgExampleAlign.vue'
-import FwbImgExampleGrayscale from './typography/image/FwbImgExampleGrayscale.vue'
-import FwbImgExampleCustom from './typography/image/FwbImgExampleCustom.vue'
+import DdtwImgExample from './typography/image/DdtwImgExample.vue'
+import DdtwImgExampleCaption from './typography/image/DdtwImgExampleCaption.vue'
+import DdtwImgExampleSize from './typography/image/DdtwImgExampleSize.vue'
+import DdtwImgExampleAlign from './typography/image/DdtwImgExampleAlign.vue'
+import DdtwImgExampleGrayscale from './typography/image/DdtwImgExampleGrayscale.vue'
+import DdtwImgExampleCustom from './typography/image/DdtwImgExampleCustom.vue'
 </script>
 
 # Vue Images - Flowbite
@@ -17,17 +17,17 @@ Use this example to show the a responsive image that won’t grow beyond the max
 
 ```vue
 <template>
-  <fwb-img
-    alt="flowbite-vue"
+  <DdtwImg
+    alt="@datadayrepos/ddtw-vue"
     src="/images/examples/image.png"
   />
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example />
+<ddtw-img-example />
 
 ## Image caption
 
@@ -35,19 +35,18 @@ This example can be used to add a caption for the image often used inside articl
 
 ```vue
 <template>
-  <fwb-img
-    alt="flowbite-vue"
-    caption="flowbite-vue"
+  <DdtwImg
+    alt="@datadayrepos/ddtw-vue"
+    caption="@datadayrepos/ddtw-vue"
     src="/images/examples/image.png"
   />
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example-caption />
-
+<ddtw-img-example-caption />
 
 ## Sizes
 
@@ -55,18 +54,18 @@ Set the size of the image using the `w-size` and `h-size` or `max-w-size` utilit
 
 ```vue
 <template>
-  <fwb-img
-    alt="flowbite-vue"
+  <DdtwImg
+    alt="@datadayrepos/ddtw-vue"
     size="max-w-md"
     src="/images/examples/image.png"
   />
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example-size />
+<ddtw-img-example-size />
 
 ## Alignment
 
@@ -74,19 +73,19 @@ Align the image component to the center or right side of the document page using
 
 ```vue
 <template>
-  <fwb-img
+  <DdtwImg
     alignment="mx-auto"
-    alt="flowbite-vue"
+    alt="@datadayrepos/ddtw-vue"
     size="max-w-md"
     src="/images/examples/image.png"
   />
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example-align />
+<ddtw-img-example-align />
 
 ## Grayscale
 
@@ -94,8 +93,8 @@ Use the filter option and apply a grayscale to the image element using the grays
 
 ```vue
 <template>
-  <fwb-img
-    alt="flowbite-vue"
+  <DdtwImg
+    alt="@datadayrepos/ddtw-vue"
     img-class="rounded-lg transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
     size="max-w-lg"
     src="/images/examples/image.png"
@@ -103,10 +102,10 @@ Use the filter option and apply a grayscale to the image element using the grays
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example-grayscale />
+<ddtw-img-example-grayscale />
 
 ## Custom classes
 
@@ -114,8 +113,8 @@ Use the `img-class` prop to apply tailwind classes.
 
 ```vue
 <template>
-  <fwb-img
-    alt="flowbite-vue"
+  <DdtwImg
+    alt="@datadayrepos/ddtw-vue"
     img-class="rounded-lg border-[1px]"
     size="max-w-lg"
     src="/images/examples/image.png"
@@ -123,7 +122,7 @@ Use the `img-class` prop to apply tailwind classes.
 </template>
 
 <script setup>
-import { FwbImg } from 'flowbite-vue'
+import { DdtwImg } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-img-example-custom />
+<ddtw-img-example-custom />

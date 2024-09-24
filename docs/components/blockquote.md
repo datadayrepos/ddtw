@@ -1,8 +1,8 @@
 <script setup>
-import FwbBlockquoteExample from './typography/blockquote/FwbBlockquoteExample.vue'
-import FwbBlockquoteSolidExample from './typography/blockquote/FwbBlockquoteSolidExample.vue'
-import FwbBlockquoteAlignExample from './typography/blockquote/FwbBlockquoteAlignExample.vue'
-import FwbBlockquoteSizeExample from './typography/blockquote/FwbBlockquoteSizeExample.vue'
+import DdtwBlockquoteExample from './typography/blockquote/DdtwBlockquoteExample.vue'
+import DdtwBlockquoteSolidExample from './typography/blockquote/DdtwBlockquoteSolidExample.vue'
+import DdtwBlockquoteAlignExample from './typography/blockquote/DdtwBlockquoteAlignExample.vue'
+import DdtwBlockquoteSizeExample from './typography/blockquote/DdtwBlockquoteSizeExample.vue'
 </script>
 
 # Vue Blockquote - Flowbite
@@ -16,58 +16,58 @@ Original reference: [https://flowbite.com/docs/typography/blockquote/](https://f
 
 ## Default blockquote
 
-Use this example to quote an external source inside a `<fwb-blockquote>` component.
+Use this example to quote an external source inside a `<ddtw-blockquote>` component.
 
-<fwb-blockquote-example/>
+<ddtw-blockquote-example/>
 
 ```vue
-<fwb-blockquote>
-    "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. 
+<ddtw-blockquote>
+    "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard.
     Perfect choice for your next SaaS application."
-</fwb-blockquote>
+</ddtw-blockquote>
 ```
 
 ## Solid background
 This example can be used as an alternative style to the default style by applying a solid background color with `type="solid"`.
 
-<fwb-blockquote-solid-example />
+<ddtw-blockquote-solid-example />
 
 ```vue
-<fwb-blockquote type="solid">
+<ddtw-blockquote type="solid">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
+</ddtw-blockquote>
 ```
 
 ## Alignment
 
 Choose from the following examples the blockquote text alignment from starting from left, center to right based on the utility classes from Tailwind CSS.
 
-<fwb-blockquote-align-example />
+<ddtw-blockquote-align-example />
 ```vue
-<fwb-blockquote class="text-left">
+<ddtw-blockquote class="text-left">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
-<fwb-blockquote class="text-center">
+</ddtw-blockquote>
+<ddtw-blockquote class="text-center">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
-<fwb-blockquote class="text-right">
+</ddtw-blockquote>
+<ddtw-blockquote class="text-right">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
+</ddtw-blockquote>
 ```
 
 ## Size
 
 Choose from one of the multiple sizes for the default blockquote component based on the surrounding elements and sizes.
 
-<fwb-blockquote-size-example />
+<ddtw-blockquote-size-example />
 ```vue
-<fwb-blockquote class="text-lg">
+<ddtw-blockquote class="text-lg">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
-<fwb-blockquote class="text-xl">
+</ddtw-blockquote>
+<ddtw-blockquote class="text-xl">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
-<fwb-blockquote class="text-2xl">
+</ddtw-blockquote>
+<ddtw-blockquote class="text-2xl">
     "Flowbite is just awesome. Perfect choice for your next SaaS application.Perfect choice for your next SaaS application."
-</fwb-blockquote>
+</ddtw-blockquote>
 ```

@@ -1,7 +1,7 @@
 <script setup>
-import FwbSpinnerExample from './spinner/examples/FwbSpinnerExample.vue'
-import FwbSpinnerExampleColor from './spinner/examples/FwbSpinnerExampleColor.vue'
-import FwbSpinnerExampleSize from './spinner/examples/FwbSpinnerExampleSize.vue'
+import DdtwSpinnerExample from './spinner/examples/DdtwSpinnerExample.vue'
+import DdtwSpinnerExampleColor from './spinner/examples/DdtwSpinnerExampleColor.vue'
+import DdtwSpinnerExampleSize from './spinner/examples/DdtwSpinnerExampleSize.vue'
 </script>
 
 # Vue Spinner - Flowbite
@@ -18,51 +18,51 @@ The spinner component can be used as a loading indicator which comes in multiple
 
 ## Basic example
 
-<fwb-spinner-example />
+<ddtw-spinner-example />
 ```vue
 <template>
-  <fwb-spinner />
+  <ddtw-spinner />
 </template>
 
 <script setup>
-import { FwbSpinner } from 'flowbite-vue'
+import { DdtwSpinner } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Prop - size
 
-<fwb-spinner-example-size />
+<ddtw-spinner-example-size />
 ```vue
 <template>
-  <fwb-spinner />
-  <fwb-spinner size="6" />
-  <fwb-spinner size="8" />
-  <fwb-spinner size="10" />
-  <fwb-spinner size="12" />
+  <ddtw-spinner />
+  <ddtw-spinner size="6" />
+  <ddtw-spinner size="8" />
+  <ddtw-spinner size="10" />
+  <ddtw-spinner size="12" />
 </template>
 
 <script setup>
-import { FwbSpinner } from 'flowbite-vue'
+import { DdtwSpinner } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Prop - color
 
-<fwb-spinner-example-color />
+<ddtw-spinner-example-color />
 ```vue
 <template>
-  <fwb-spinner color="blue" />
-  <fwb-spinner color="gray" />
-  <fwb-spinner color="green" />
-  <fwb-spinner color="pink" />
-  <fwb-spinner color="purple" />
-  <fwb-spinner color="red" />
-  <fwb-spinner color="white" />
-  <fwb-spinner color="yellow" />
+  <ddtw-spinner color="blue" />
+  <ddtw-spinner color="gray" />
+  <ddtw-spinner color="green" />
+  <ddtw-spinner color="pink" />
+  <ddtw-spinner color="purple" />
+  <ddtw-spinner color="red" />
+  <ddtw-spinner color="white" />
+  <ddtw-spinner color="yellow" />
 </template>
 
 <script setup>
-import { FwbSpinner } from 'flowbite-vue'
+import { DdtwSpinner } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 

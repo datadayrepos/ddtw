@@ -1,35 +1,10 @@
 <div align="center">
-  <h1>flowbite-vue</h1>
-  <p>
-    <a href="https://flowbite.com">
-      <img alt="Flowbite - Tailwind CSS components" width="350" src="./docs/assets/github.png">
-    </a>
-  </p>
-  <p>
-    Build websites even faster with components on top of Vue and Tailwind CSS
-  </p>
-  <p>
-    <a href="https://codecov.io/gh/themesberg/flowbite-vue">
-      <img src="https://codecov.io/gh/themesberg/flowbite-vue/branch/main/graph/badge.svg?token=wnw40SeY4k"/>
-    </a>
-    <a href="https://discord.com/invite/4eeurUVvTy">
-      <img src="https://img.shields.io/discord/902911619032576090?color=%237289da&label=Discord" alt="Discord">
-    </a>
-    <a href="https://www.npmjs.com/package/flowbite-vue">
-      <img src="https://img.shields.io/npm/dt/flowbite-vue.svg" alt="Total Downloads">
-    </a>
-    <a href="https://badge.fury.io/js/flowbite-vue">
-      <img alt="Latest release" src="https://badge.fury.io/js/flowbite-vue.svg">
-    </a>
-    <a href="https://flowbite.com/getting-started/license/">
-      <img src="https://img.shields.io/badge/license-MIT-blue" alt="Licenese">
-    </a>
-  </p>
+  <h1>@datadayrepos/ddtw-vue</h1>
 </div>
 
 ---
 
-### `flowbite-vue` is an open source collection of UI components, built in Vue, with utility classes from Tailwind CSS that you can use as a starting point for user interfaces and websites.
+### `@datadayrepos/ddtw-vue` is an open source collection of UI components, built in Vue, with utility classes from Tailwind CSS that you can use as a starting point for user interfaces and websites.
 
 ## Table of Contents
 
@@ -45,15 +20,11 @@
 
 ## Documentation
 
-Documentation for `flowbite-vue` is not yet finished.
-
-If you want to browse the components, visit [flowbite.com](https://flowbite.com/).
-
-If you want to learn more about Flowbite, visit [Flowbite docs](https://flowbite.com/docs/getting-started/introduction/).
+Documentation for `@datadayrepos/ddtw-vue` is not yet finished.
 
 ## Getting started
 
-To use `flowbite-vue`, you just need to setup `flowbite` normally and install `flowbite-vue` from `npm`.
+To use `@datadayrepos/ddtw-vue`, you just need to setup `flowbite` normally and install `@datadayrepos/ddtw-vue` from `npm`.
 
 `flowbite` can be included as a plugin into an existing Tailwind CSS project.
 
@@ -64,7 +35,7 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
 1. Install `flowbite` as a dependency using `npm` by running the following command:
 
 ```bash
-npm i flowbite flowbite-vue
+npm i flowbite @datadayrepos/ddtw-vue
 ```
 
 2. Require `flowbite` as a plugin inside the `tailwind.config.js` file:
@@ -73,7 +44,7 @@ npm i flowbite flowbite-vue
 module.exports = {
   content: [
     ...,
-    'node_modules/flowbite-vue/**/*.{js,jsx,ts,tsx}'
+    'node_modules/@datadayrepos/ddtw-vue/**/*.{js,jsx,ts,tsx}'
   ],
   plugins: [..., require('flowbite/plugin')],
 };
@@ -358,28 +329,4 @@ module.exports = {
   </tr>
 </table>
 
-## Community
 
-If you need help or just want to discuss about the library join the community on Github:
-
-⌨️ [Discuss about Flowbite on GitHub](https://github.com/themesberg/flowbite/discussions)
-
-For casual chatting with others using the library:
-
-💬 [Join the Flowbite Discord Server](https://discord.gg/4eeurUVvTy)
-
-## Contributing
-
-Thank you for your interest in helping! Visit our [guide on contributing](https://github.com/themesberg/flowbite-vue/blob/main/CONTRIBUTING.md) to get started.
-
-## Figma
-
-If you need the Figma files for the components you can check out our website for more information:
-
-🎨 [Get access to the Figma design files](https://flowbite.com/figma/)
-
-## Copyright and license
-
-The Flowbite name and logos are trademarks of Crafty Dwarf Inc.
-
-📝 [Read about the licensing terms](https://flowbite.com/getting-started/license/)

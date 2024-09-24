@@ -1,10 +1,10 @@
 <script setup>
-  import FwbToggleExample from './toggle/examples/FwbToggleExample.vue'
-  import FwbToggleExampleChecked from './toggle/examples/FwbToggleExampleChecked.vue'
-  import FwbToggleExampleColors from './toggle/examples/FwbToggleExampleColors.vue'
-  import FwbToggleExampleDisabled from './toggle/examples/FwbToggleExampleDisabled.vue'
-  import FwbToggleExampleSize from './toggle/examples/FwbToggleExampleSize.vue'
-  import FwbToggleExampleOrder from './toggle/examples/FwbToggleExampleOrder.vue'
+  import DdtwToggleExample from './toggle/examples/DdtwToggleExample.vue'
+  import DdtwToggleExampleChecked from './toggle/examples/DdtwToggleExampleChecked.vue'
+  import DdtwToggleExampleColors from './toggle/examples/DdtwToggleExampleColors.vue'
+  import DdtwToggleExampleDisabled from './toggle/examples/DdtwToggleExampleDisabled.vue'
+  import DdtwToggleExampleSize from './toggle/examples/DdtwToggleExampleSize.vue'
+  import DdtwToggleExampleOrder from './toggle/examples/DdtwToggleExampleOrder.vue'
 </script>
 
 # Vue Toggle - Flowbite
@@ -21,15 +21,15 @@ The toggle component can be used to receive a simple “yes” or “no” type 
 
 ## Default toggle
 
-<fwb-toggle-example />
+<ddtw-toggle-example />
 ```vue
 <template>
-  <fwb-toggle v-model="toggle" label="Toggle me" />
+  <ddtw-toggle v-model="toggle" label="Toggle me" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbToggle } from 'flowbite-vue'
+import { DdtwToggle } from '@datadayrepos/ddtw-vue'
 
 const toggle = ref(false)
 </script>
@@ -37,15 +37,15 @@ const toggle = ref(false)
 
 ## Checked toggle
 
-<fwb-toggle-example-checked />
+<ddtw-toggle-example-checked />
 ```vue
 <template>
-  <fwb-toggle v-model="toggle" label="Toggle me" />
+  <ddtw-toggle v-model="toggle" label="Toggle me" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbToggle } from 'flowbite-vue'
+import { DdtwToggle } from '@datadayrepos/ddtw-vue'
 
 const toggle = ref(true)
 </script>
@@ -53,15 +53,15 @@ const toggle = ref(true)
 
 ## Disabled toggle
 
-<fwb-toggle-example-disabled />
+<ddtw-toggle-example-disabled />
 ```vue
 <template>
-  <fwb-toggle v-model="toggle" disabled label="Can't Toggle me" />
+  <ddtw-toggle v-model="toggle" disabled label="Can't Toggle me" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbToggle } from 'flowbite'
+import { DdtwToggle } from 'flowbite'
 
 const toggle = ref(false)
 </script>
@@ -69,43 +69,43 @@ const toggle = ref(false)
 
 ## Colors
 
-<fwb-toggle-example-colors />
+<ddtw-toggle-example-colors />
 ```vue
 <template>
-  <fwb-toggle label="Red" color="red" />
-  <fwb-toggle label="Green" color="green" />
-  <fwb-toggle label="Purple" color="purple" />
-  <fwb-toggle label="Yellow" color="yellow" />
-  <fwb-toggle label="Teal" color="teal" />
-  <fwb-toggle label="Orange" color="orange" />
+  <ddtw-toggle label="Red" color="red" />
+  <ddtw-toggle label="Green" color="green" />
+  <ddtw-toggle label="Purple" color="purple" />
+  <ddtw-toggle label="Yellow" color="yellow" />
+  <ddtw-toggle label="Teal" color="teal" />
+  <ddtw-toggle label="Orange" color="orange" />
 </template>
 ```
 
 ## Size
 
-<fwb-toggle-example-size />
+<ddtw-toggle-example-size />
 ```vue
 <template>
-  <fwb-toggle label="Small" size="sm" />
-  <fwb-toggle label="Medium" size="md" />
-  <fwb-toggle label="Large" size="lg" />
+  <ddtw-toggle label="Small" size="sm" />
+  <ddtw-toggle label="Medium" size="md" />
+  <ddtw-toggle label="Large" size="lg" />
 </template>
 
 <script setup>
-import { FwbToggle } from 'flowbite-vue'
+import { DdtwToggle } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Label position
 
-<fwb-toggle-example-order />
+<ddtw-toggle-example-order />
 ```vue
 <template>
-  <fwb-toggle label="Toggle me" />
-  <fwb-toggle label="Toggle me" reverse />
+  <ddtw-toggle label="Toggle me" />
+  <ddtw-toggle label="Toggle me" reverse />
 </template>
 
 <script setup>
-import { FwbToggle } from 'flowbite-vue'
+import { DdtwToggle } from '@datadayrepos/ddtw-vue'
 </script>
 ```

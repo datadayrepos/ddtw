@@ -1,19 +1,19 @@
 <script setup>
-import FwbButtonExampleColor from './button/examples/FwbButtonExampleColor.vue';
-import FwbButtonExampleDisabled from './button/examples/FwbButtonExampleDisabled.vue';
-import FwbButtonExampleGradientDuotone from './button/examples/FwbButtonExampleGradientDuotone.vue';
-import FwbButtonExampleGradientMonochrome from './button/examples/FwbButtonExampleGradientMonochrome.vue';
-import FwbButtonExampleLink from './button/examples/FwbButtonExampleLink.vue';
-import FwbButtonExampleLoading from './button/examples/FwbButtonExampleLoading.vue';
-import FwbButtonExampleOutline from './button/examples/FwbButtonExampleOutline.vue';
-import FwbButtonExampleOutlineGradient from './button/examples/FwbButtonExampleOutlineGradient.vue';
-import FwbButtonExamplePill from './button/examples/FwbButtonExamplePill.vue';
-import FwbButtonExampleShadow from './button/examples/FwbButtonExampleShadow.vue';
-import FwbButtonExampleSize from './button/examples/FwbButtonExampleSize.vue';
-import FwbButtonExampleSlot from './button/examples/FwbButtonExampleSlot.vue';
-import FwbButtonExampleSlotPrefix from './button/examples/FwbButtonExampleSlotPrefix.vue';
-import FwbButtonExampleSlotSuffix from './button/examples/FwbButtonExampleSlotSuffix.vue';
-import FwbButtonExampleSquare from './button/examples/FwbButtonExampleSquare.vue';
+import DdtwButtonExampleColor from './button/examples/DdtwButtonExampleColor.vue';
+import DdtwButtonExampleDisabled from './button/examples/DdtwButtonExampleDisabled.vue';
+import DdtwButtonExampleGradientDuotone from './button/examples/DdtwButtonExampleGradientDuotone.vue';
+import DdtwButtonExampleGradientMonochrome from './button/examples/DdtwButtonExampleGradientMonochrome.vue';
+import DdtwButtonExampleLink from './button/examples/DdtwButtonExampleLink.vue';
+import DdtwButtonExampleLoading from './button/examples/DdtwButtonExampleLoading.vue';
+import DdtwButtonExampleOutline from './button/examples/DdtwButtonExampleOutline.vue';
+import DdtwButtonExampleOutlineGradient from './button/examples/DdtwButtonExampleOutlineGradient.vue';
+import DdtwButtonExamplePill from './button/examples/DdtwButtonExamplePill.vue';
+import DdtwButtonExampleShadow from './button/examples/DdtwButtonExampleShadow.vue';
+import DdtwButtonExampleSize from './button/examples/DdtwButtonExampleSize.vue';
+import DdtwButtonExampleSlot from './button/examples/DdtwButtonExampleSlot.vue';
+import DdtwButtonExampleSlotPrefix from './button/examples/DdtwButtonExampleSlotPrefix.vue';
+import DdtwButtonExampleSlotSuffix from './button/examples/DdtwButtonExampleSlotSuffix.vue';
+import DdtwButtonExampleSquare from './button/examples/DdtwButtonExampleSquare.vue';
 </script>
 
 # Vue Button - Flowbite
@@ -31,232 +31,146 @@ The button component is probably the most widely used element in any user interf
 Flowbite provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.
 
 ## Prop - color
-
-<fwb-button-example-color />
+### The TW formatting is completey gone
+<ddtw-button-example-color />
 ```vue
 <template>
-  <fwb-button color="default">Default</fwb-button>
-  <fwb-button color="alternative">Alternative</fwb-button>
-  <fwb-button color="dark">Dark</fwb-button>
-  <fwb-button color="light">Light</fwb-button>
-  <fwb-button color="green">Green</fwb-button>
-  <fwb-button color="red">Red</fwb-button>
-  <fwb-button color="yellow">Yellow</fwb-button>
-  <fwb-button color="purple">Purple</fwb-button>
-  <fwb-button color="pink">Pink</fwb-button>
+  <ddtw-button color="default">Default</ddtw-button>
+  <ddtw-button color="alternative">Alternative</ddtw-button>
+  <ddtw-button color="dark">Dark</ddtw-button>
+  <ddtw-button color="light">Light</ddtw-button>
+  <ddtw-button color="green">Green</ddtw-button>
+  <ddtw-button color="red">Red</ddtw-button>
+  <ddtw-button color="yellow">Yellow</ddtw-button>
+  <ddtw-button color="purple">Purple</ddtw-button>
+  <ddtw-button color="pink">Pink</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ````
 
-
 ## Prop - size
 
-<fwb-button-example-size />
+<ddtw-button-example-size />
 ```vue
 <template>
-  <fwb-button size="xs">Extra Small - xs</fwb-button>
-  <fwb-button size="sm">Small - sm</fwb-button>
-  <fwb-button size="md">Medium - md</fwb-button>
-  <fwb-button size="lg">Large - lg</fwb-button>
-  <fwb-button size="xl">Extra Large - xl</fwb-button>
+  <ddtw-button size="xs">Extra Small - xs</ddtw-button>
+  <ddtw-button size="sm">Small - sm</ddtw-button>
+  <ddtw-button size="md">Medium - md</ddtw-button>
+  <ddtw-button size="lg">Large - lg</ddtw-button>
+  <ddtw-button size="xl">Extra Large - xl</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 ````
 
 ## Prop - pill
 
-<fwb-button-example-pill />
+<ddtw-button-example-pill />
 ```vue
 <template>
-  <fwb-button color="default" pill>Default</fwb-button>
-  <fwb-button color="alternative" pill>Alternative</fwb-button>
-  <fwb-button color="dark" pill>Dark</fwb-button>
-  <fwb-button color="light" pill>Light</fwb-button>
-  <fwb-button color="green" pill>Green</fwb-button>
-  <fwb-button color="red" pill>Red</fwb-button>
-  <fwb-button color="yellow" pill>Yellow</fwb-button>
-  <fwb-button color="purple" pill>Purple</fwb-button>
+  <ddtw-button color="default" pill>Default</ddtw-button>
+  <ddtw-button color="alternative" pill>Alternative</ddtw-button>
+  <ddtw-button color="dark" pill>Dark</ddtw-button>
+  <ddtw-button color="light" pill>Light</ddtw-button>
+  <ddtw-button color="green" pill>Green</ddtw-button>
+  <ddtw-button color="red" pill>Red</ddtw-button>
+  <ddtw-button color="yellow" pill>Yellow</ddtw-button>
+  <ddtw-button color="purple" pill>Purple</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ````
-
-
-## Prop - gradient (monochrome)
-
-<fwb-button-example-gradient-monochrome />
-```vue
-<template>
-  <fwb-button gradient="blue">Blue</fwb-button>
-  <fwb-button gradient="cyan">Cyan</fwb-button>
-  <fwb-button gradient="green">Green</fwb-button>
-  <fwb-button gradient="lime">Lime</fwb-button>
-  <fwb-button gradient="pink">Pink</fwb-button>
-  <fwb-button gradient="purple">Purple</fwb-button>
-  <fwb-button gradient="red">Red</fwb-button>
-  <fwb-button gradient="teal">Teal</fwb-button>
-</template>
-
-<script setup>
-import { FwbButton } from 'flowbite-vue'
-</script>
-````
-
-## Prop - gradient (duotone)
-
-<fwb-button-example-gradient-duotone />
-```vue
-<template>
-  <fwb-button gradient="purple-blue">Purple to blue</fwb-button>
-  <fwb-button gradient="cyan-blue">Cyan to blue</fwb-button>
-  <fwb-button gradient="green-blue">Green to blue</fwb-button>
-  <fwb-button gradient="purple-pink">Purple to pink</fwb-button>
-  <fwb-button gradient="pink-orange">Pink to orange</fwb-button>
-  <fwb-button gradient="teal-lime">Teal to lime</fwb-button>
-  <fwb-button gradient="red-yellow">Red to yellow</fwb-button>
-</template>
-
-<script setup>
-import { FwbButton } from 'flowbite-vue'
-</script>
-
-````
-
 
 ## Prop - outline
 
-<fwb-button-example-outline />
+<ddtw-button-example-outline />
 ```vue
 <template>
-  <fwb-button color="default" outline>Default</fwb-button>
-  <fwb-button color="dark" outline>Dark</fwb-button>
-  <fwb-button color="green" outline>Green</fwb-button>
-  <fwb-button color="red" outline>Red</fwb-button>
-  <fwb-button color="yellow" outline>Yellow</fwb-button>
-  <fwb-button color="purple" outline>Purple</fwb-button>
+  <ddtw-button color="default" outline>Default</ddtw-button>
+  <ddtw-button color="dark" outline>Dark</ddtw-button>
+  <ddtw-button color="green" outline>Green</ddtw-button>
+  <ddtw-button color="red" outline>Red</ddtw-button>
+  <ddtw-button color="yellow" outline>Yellow</ddtw-button>
+  <ddtw-button color="purple" outline>Purple</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
-</script>
-````
-
-## Prop - outline (gradient)
-
-<fwb-button-example-outline-gradient />
-```vue
-<template>
-  <fwb-button gradient="purple-blue" outline>Purple to blue</fwb-button>
-  <fwb-button gradient="cyan-blue" outline>Cyan to blue</fwb-button>
-  <fwb-button gradient="green-blue" outline>Green to blue</fwb-button>
-  <fwb-button gradient="purple-pink" outline>Purple to pink</fwb-button>
-  <fwb-button gradient="pink-orange" outline>Pink to orange</fwb-button>
-  <fwb-button gradient="teal-lime" outline>Teal to lime</fwb-button>
-  <fwb-button gradient="red-yellow" outline>Red to yellow</fwb-button>
-</template>
-
-<script setup>
-import { FwbButton } from 'flowbite-vue'
-</script>
-
-````
-
-## Prop - shadow
-
-<fwb-button-example-shadow />
-```vue
-<template>
-  <fwb-button gradient="blue" shadow>Blue with blue</fwb-button>
-  <fwb-button gradient="cyan" shadow>Cyan with cyan</fwb-button>
-  <fwb-button gradient="green" shadow>Green with green</fwb-button>
-  <fwb-button gradient="lime" shadow>Lime with lime</fwb-button>
-  <fwb-button gradient="pink" shadow>Pink with pink</fwb-button>
-  <fwb-button gradient="purple" shadow>Purple with purple</fwb-button>
-  <fwb-button gradient="red" shadow>Red with red</fwb-button>
-  <fwb-button gradient="teal" shadow>Teal with teal</fwb-button>
-  <fwb-button gradient="blue" shadow="red">Blue with red</fwb-button>
-  <fwb-button gradient="cyan" shadow="teal">Cyan with teal</fwb-button>
-  <fwb-button gradient="teal" shadow="purple">Teal with purple</fwb-button>
-</template>
-
-<script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 ````
 
 ## Prop - square
 
-<fwb-button-example-square />
+<ddtw-button-example-square />
 ```vue
 <template>
-  <fwb-button gradient="red-yellow" square>
+  <ddtw-button gradient="red-yellow" square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
     </svg>
-  </fwb-button>
-  <fwb-button color="default" pill square>
+  </ddtw-button>
+  <ddtw-button color="default" pill square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
     </svg>
-  </fwb-button>
-  <fwb-button color="dark" outline square>
+  </ddtw-button>
+  <ddtw-button color="dark" outline square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
     </svg>
-  </fwb-button>
-  <fwb-button color="yellow" outline pill square>
+  </ddtw-button>
+  <ddtw-button color="yellow" outline pill square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
     </svg>
-  </fwb-button>
+  </ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ````
 
 ## Prop - loading
 
-<fwb-button-example-loading />
+<ddtw-button-example-loading />
 ```vue
 <template>
-  <fwb-button :disabled="loading" :loading="loading" gradient="purple-blue" outline size="xs" @click="loading = !loading">
+  <ddtw-button :disabled="loading" :loading="loading" gradient="purple-blue" outline size="xs" @click="loading = !loading">
     Click me
-  </fwb-button>
-  <fwb-button :loading="loading" gradient="red-yellow" size="sm" @click="loading = !loading">
+  </ddtw-button>
+  <ddtw-button :loading="loading" gradient="red-yellow" size="sm" @click="loading = !loading">
     Click me
-  </fwb-button>
-  <fwb-button :loading="loading" color="default" loading-position="suffix" outline @click="loading = !loading">
+  </ddtw-button>
+  <ddtw-button :loading="loading" color="default" loading-position="suffix" outline @click="loading = !loading">
     Click me
     <template #suffix>
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-button>
-  <fwb-button :loading="loading" gradient="green-blue" size="lg" @click="loading = !loading">
+  </ddtw-button>
+  <ddtw-button :loading="loading" gradient="green-blue" size="lg" @click="loading = !loading">
     Click me
-  </fwb-button>
-  <fwb-button :loading="loading" gradient="pink" size="xl" @click="loading = !loading">
+  </ddtw-button>
+  <ddtw-button :loading="loading" gradient="pink" size="xl" @click="loading = !loading">
     Click me
-  </fwb-button>
+  </ddtw-button>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 
 const loading = ref(false)
 </script>
@@ -264,18 +178,18 @@ const loading = ref(false)
 
 ## Prop - disabled
 
-<fwb-button-example-disabled />
+<ddtw-button-example-disabled />
 ```vue
 <template>
-  <fwb-button color="default" disabled>Default</fwb-button>
-  <fwb-button color="default" outline disabled>Default outline</fwb-button>
-  <fwb-button gradient="red" disabled>Red gradient</fwb-button>
-  <fwb-button gradient="red-yellow" disabled>Red to yellow gradient</fwb-button>
-  <fwb-button gradient="red-yellow" outline disabled>Red to yellow outline</fwb-button>
+  <ddtw-button color="default" disabled>Default</ddtw-button>
+  <ddtw-button color="default" outline disabled>Default outline</ddtw-button>
+  <ddtw-button gradient="red" disabled>Red gradient</ddtw-button>
+  <ddtw-button gradient="red-yellow" disabled>Red to yellow gradient</ddtw-button>
+  <ddtw-button gradient="red-yellow" outline disabled>Red to yellow outline</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ````
@@ -284,92 +198,175 @@ import { FwbButton } from 'flowbite-vue'
 You can add a link to a `Button` component.
 Additionally you can add `tag` prop to change button component to `router-link`
 
-<fwb-button-example-link />
+<ddtw-button-example-link />
 ```vue
 <template>
-  <fwb-button href="https://google.com" target="_blank">Google.com</fwb-button>
-  <fwb-button href="/pages/getting-started" tag="router-link">Quickstart</fwb-button>
+  <ddtw-button href="https://google.com" target="_blank">Google.com</ddtw-button>
+  <ddtw-button href="/pages/getting-started" tag="router-link">Quickstart</ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 ````
 
 ## Slot - default
 
-<fwb-button-example-slot />
+<ddtw-button-example-slot />
 ```vue
 <template>
-  <fwb-button gradient="purple-blue" square>
+  <ddtw-button gradient="purple-blue" square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
     </svg>
-  </fwb-button>
-  <fwb-button color="default" pill square>
+  </ddtw-button>
+  <ddtw-button color="default" pill square>
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
       <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
     </svg>
-  </fwb-button>
-  <fwb-button gradient="green-blue" square>
+  </ddtw-button>
+  <ddtw-button gradient="green-blue" square>
     Close something
-  </fwb-button>
-  <fwb-button color="default" outline pill square>
+  </ddtw-button>
+  <ddtw-button color="default" outline pill square>
     Open something
     <template #suffix>
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-button>
+  </ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ````
 
 ## Slot - prefix
 
-<fwb-button-example-slot-prefix />
+<ddtw-button-example-slot-prefix />
 ```vue
 <template>
-  <fwb-button>
+  <ddtw-button>
     <template #prefix>
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
       </svg>
     </template>
     Buy
-  </fwb-button>
+  </ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 ````
 
 ## Slot - suffix
 
-<fwb-button-example-slot-suffix />
+<ddtw-button-example-slot-suffix />
 ```vue
 <template>
-  <fwb-button>
+  <ddtw-button>
     Choose plan
     <template #suffix>
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd" />
       </svg>
     </template>
-  </fwb-button>
+  </ddtw-button>
 </template>
 
 <script setup>
-import { FwbButton } from 'flowbite-vue'
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
 </script>
 
 ```
+
+## Prop - gradient (monochrome) - // ABY deprecated
+
+<ddtw-button-example-gradient-monochrome />
+```vue
+<template>
+  <ddtw-button gradient="blue">Blue</ddtw-button>
+  <ddtw-button gradient="cyan">Cyan</ddtw-button>
+  <ddtw-button gradient="green">Green</ddtw-button>
+  <ddtw-button gradient="lime">Lime</ddtw-button>
+  <ddtw-button gradient="pink">Pink</ddtw-button>
+  <ddtw-button gradient="purple">Purple</ddtw-button>
+  <ddtw-button gradient="red">Red</ddtw-button>
+  <ddtw-button gradient="teal">Teal</ddtw-button>
+</template>
+
+<script setup>
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
+</script>
+````
+
+## Prop - gradient (duotone) - // ABY deprecated
+
+<ddtw-button-example-gradient-duotone />
+```vue
+<template>
+  <ddtw-button gradient="purple-blue">Purple to blue</ddtw-button>
+  <ddtw-button gradient="cyan-blue">Cyan to blue</ddtw-button>
+  <ddtw-button gradient="green-blue">Green to blue</ddtw-button>
+  <ddtw-button gradient="purple-pink">Purple to pink</ddtw-button>
+  <ddtw-button gradient="pink-orange">Pink to orange</ddtw-button>
+  <ddtw-button gradient="teal-lime">Teal to lime</ddtw-button>
+  <ddtw-button gradient="red-yellow">Red to yellow</ddtw-button>
+</template>
+
+<script setup>
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
+</script>
+
+````
+
+## Prop - outline (gradient) - // ABY deprecated
+
+<ddtw-button-example-outline-gradient />
+```vue
+<template>
+  <ddtw-button gradient="purple-blue" outline>Purple to blue</ddtw-button>
+  <ddtw-button gradient="cyan-blue" outline>Cyan to blue</ddtw-button>
+  <ddtw-button gradient="green-blue" outline>Green to blue</ddtw-button>
+  <ddtw-button gradient="purple-pink" outline>Purple to pink</ddtw-button>
+  <ddtw-button gradient="pink-orange" outline>Pink to orange</ddtw-button>
+  <ddtw-button gradient="teal-lime" outline>Teal to lime</ddtw-button>
+  <ddtw-button gradient="red-yellow" outline>Red to yellow</ddtw-button>
+</template>
+
+<script setup>
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
+</script>
+
+````
+
+## Prop - shadow - // ABY deprecated
+
+<ddtw-button-example-shadow />
+```vue
+<template>
+  <ddtw-button gradient="blue" shadow>Blue with blue</ddtw-button>
+  <ddtw-button gradient="cyan" shadow>Cyan with cyan</ddtw-button>
+  <ddtw-button gradient="green" shadow>Green with green</ddtw-button>
+  <ddtw-button gradient="lime" shadow>Lime with lime</ddtw-button>
+  <ddtw-button gradient="pink" shadow>Pink with pink</ddtw-button>
+  <ddtw-button gradient="purple" shadow>Purple with purple</ddtw-button>
+  <ddtw-button gradient="red" shadow>Red with red</ddtw-button>
+  <ddtw-button gradient="teal" shadow>Teal with teal</ddtw-button>
+  <ddtw-button gradient="blue" shadow="red">Blue with red</ddtw-button>
+  <ddtw-button gradient="cyan" shadow="teal">Cyan with teal</ddtw-button>
+  <ddtw-button gradient="teal" shadow="purple">Teal with purple</ddtw-button>
+</template>
+
+<script setup>
+import { DdtwButton } from '@datadayrepos/ddtw-vue'
+</script>
+````
 
 ## Button API
 
@@ -378,13 +375,13 @@ import { FwbButton } from 'flowbite-vue'
 |------------------|---------|------------------------------------------------------------------------------------------------|-----------|
 | color            | String  | `default`, `alternative`, `dark`, `light`, `green`, `red`, `yellow`, `purple`, `pink`, `blue`  | `default` |
 | disabled         | Boolean |                                                                                                | `false`   |
-| gradient         | String  | monochrome:<br>`blue`, `green`, `cyan`, `teal`, `lime`, `red`, `pink`, `purple`<br>duotone:<br>`purple-blue`, `cyan-blue`, `green-blue`, `purple-pink`, `pink-orange`, `teal-lime`, `red-yellow`                                      | `null`    |
+| gradient (deprecated)         | String  | monochrome:<br>`blue`, `green`, `cyan`, `teal`, `lime`, `red`, `pink`, `purple`<br>duotone:<br>`purple-blue`, `cyan-blue`, `green-blue`, `purple-pink`, `pink-orange`, `teal-lime`, `red-yellow`                                      | `null`    |
 | href             | String  |                                                                                                | `''`      |
 | loading          | Boolean |                                                                                                | `false`   |
 | loading-position | String  |  `prefix`, `suffix`                                                                            | `prefix`  |
 | outline          | Boolean |                                                                                                | `false`   |
 | pill             | Boolean |                                                                                                | `false`   |
-| shadow           | String  | `blue`, `green`, `cyan`, `teal`, `lime`, `red`, `pink`, `purple`                               | `null`    |
+| shadow /deprecated)          | String  | `blue`, `green`, `cyan`, `teal`, `lime`, `red`, `pink`, `purple`                               | `null`    |
 | size             | String  | `xs`, `sm`, `md`, `lg`, `xl`                                                                   | `md`      |
 | square           | Boolean |                                                                                                | `false`   |
 | tag              | String  |                                                                                                | `a`       |

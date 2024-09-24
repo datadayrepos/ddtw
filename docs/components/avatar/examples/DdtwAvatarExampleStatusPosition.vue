@@ -1,0 +1,52 @@
+<template>
+  <div class="vp-raw flex justify-center space-x-4">
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      status-position="top-left"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      rounded
+      status-position="top-left"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      status-position="top-right"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      rounded
+      status-position="top-right"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      status-position="bottom-left"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      rounded
+      status-position="bottom-left"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      status-position="bottom-right"
+      status="online"
+    />
+    <DdtwAvatar
+      img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+      rounded
+      status-position="bottom-right"
+      status="online"
+    />
+  </div>
+</template>
+
+<script setup>
+import { DdtwAvatar } from '../../../../src/index'
+</script>

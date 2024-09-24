@@ -1,10 +1,10 @@
 <script setup>
-import FwbCarouselExample from './carousel/examples/FwbCarouselExample.vue'
-import FwbCarouselExamplePictures from './carousel/examples/FwbCarouselExamplePictures.vue'
-import FwbCarouselExampleSlide from './carousel/examples/FwbCarouselExampleSlide.vue'
-import FwbCarouselExampleSlideInterval from './carousel/examples/FwbCarouselExampleSlideInterval.vue'
-import FwbCarouselExampleWithoutControls from './carousel/examples/FwbCarouselExampleWithoutControls.vue'
-import FwbCarouselExampleWithoutIndicators from './carousel/examples/FwbCarouselExampleWithoutIndicators.vue'
+import DdtwCarouselExample from './carousel/examples/DdtwCarouselExample.vue'
+import DdtwCarouselExamplePictures from './carousel/examples/DdtwCarouselExamplePictures.vue'
+import DdtwCarouselExampleSlide from './carousel/examples/DdtwCarouselExampleSlide.vue'
+import DdtwCarouselExampleSlideInterval from './carousel/examples/DdtwCarouselExampleSlideInterval.vue'
+import DdtwCarouselExampleWithoutControls from './carousel/examples/DdtwCarouselExampleWithoutControls.vue'
+import DdtwCarouselExampleWithoutIndicators from './carousel/examples/DdtwCarouselExampleWithoutIndicators.vue'
 </script>
 # Vue Carousel - Flowbite
 
@@ -12,14 +12,14 @@ Use the carousel component to slide through multiple elements and images using c
 
 ## Basic Carousel
 
-<fwb-carousel-example />
+<ddtw-carousel-example />
 ```vue
 <template>
-  <fwb-carousel :pictures="pictures" />
+  <ddtw-carousel :pictures="pictures" />
 </template>
 
 <script setup>
-import { FwbCarousel } from 'flowbite-vue'
+import { DdtwCarousel } from '@datadayrepos/ddtw-vue'
 
 const pictures = [
   {src: '/images/img-1.svg', alt: 'Image 1'},
@@ -29,17 +29,16 @@ const pictures = [
 </script>
 ```
 
-
 ## Carousel without controls
 
-<fwb-carousel-example-without-controls />
+<ddtw-carousel-example-without-controls />
 ```vue
 <template>
-  <fwb-carousel no-controls :pictures="pictures" />
+  <ddtw-carousel no-controls :pictures="pictures" />
 </template>
 
 <script setup>
-import { FwbCarousel } from 'flowbite-vue'
+import { DdtwCarousel } from '@datadayrepos/ddtw-vue'
 
 const pictures = [
   {src: '/images/img-1.svg', alt: 'Image 1'},
@@ -50,14 +49,14 @@ const pictures = [
 ```
 ## Carousel without indicators
 
-<fwb-carousel-example-without-indicators />
+<ddtw-carousel-example-without-indicators />
 ```vue
 <template>
-  <fwb-carousel no-indicators :pictures="pictures" />
+  <ddtw-carousel no-indicators :pictures="pictures" />
 </template>
 
 <script setup>
-import { FwbCarousel } from 'flowbite-vue'
+import { DdtwCarousel } from '@datadayrepos/ddtw-vue'
 
 const pictures = [
   {src: '/images/img-1.svg', alt: 'Image 1'},
@@ -69,14 +68,14 @@ const pictures = [
 
 ## Carousel with slide animation
 
-<fwb-carousel-example-slide />
+<ddtw-carousel-example-slide />
 ```vue
 <template>
-  <fwb-carousel :pictures="pictures" slide />
+  <ddtw-carousel :pictures="pictures" slide />
 </template>
 
 <script setup>
-import { FwbCarousel } from 'flowbite-vue'
+import { DdtwCarousel } from '@datadayrepos/ddtw-vue'
 
 const pictures = [
   {src: '/images/img-1.svg', alt: 'Image 1'},
@@ -88,20 +87,20 @@ const pictures = [
 
 ## Carousel with slide and custom interval
 
-<fwb-carousel-example-slide-interval />
+<ddtw-carousel-example-slide-interval />
 
 ```vue
 <template>
-  <fwb-carousel :pictures="pictures" slide :slide-interval="1000"/>
+  <DdtwCarousel :pictures="pictures" slide :slide-interval="1000" />
 </template>
 
 <script setup>
-import { FwbCarousel } from 'flowbite-vue'
+import { DdtwCarousel } from '@datadayrepos/ddtw-vue'
 
 const pictures = [
-  {src: '/images/img-1.svg', alt: 'Image 1'},
-  {src: '/images/img-2.svg', alt: 'Image 2'},
-  {src: '/images/img-3.svg', alt: 'Image 3'},
+  { alt: 'Image 1', src: '/images/img-1.svg' },
+  { alt: 'Image 2', src: '/images/img-2.svg' },
+  { alt: 'Image 3', src: '/images/img-3.svg' },
 ]
 </script>
 ```

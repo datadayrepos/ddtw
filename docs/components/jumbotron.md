@@ -1,9 +1,9 @@
 <script setup>
-import FwbJumbotronExample from './jumbotron/examples/FwbJumbotronExample.vue';
-import FwbJumbotronFormExample from './jumbotron/examples/FwbJumbotronFormExample.vue';
-import FwbJumbotronGradientExample from './jumbotron/examples/FwbJumbotronGradientExample.vue';
-import FwbJumbotronBackgroundImageExample from './jumbotron/examples/FwbJumbotronBackgroundImageExample.vue';
-import FwbJumbotronVideoExample from './jumbotron/examples/FwbJumbotronVideoExample.vue';
+import DdtwJumbotronExample from './jumbotron/examples/DdtwJumbotronExample.vue';
+import DdtwJumbotronFormExample from './jumbotron/examples/DdtwJumbotronFormExample.vue';
+import DdtwJumbotronGradientExample from './jumbotron/examples/DdtwJumbotronGradientExample.vue';
+import DdtwJumbotronBackgroundImageExample from './jumbotron/examples/DdtwJumbotronBackgroundImageExample.vue';
+import DdtwJumbotronVideoExample from './jumbotron/examples/DdtwJumbotronVideoExample.vue';
 </script>
 
 # Vue Jumbotron - Flowbite
@@ -22,16 +22,15 @@ This UI component features a heading title, a short description, an optional CTA
 
 The jumbotron component from Flowbite is responsive on all devices, natively supports dark mode and is coded with the utility classes from Tailwind CSS.
 
-
 ## Default Jumbotron
 Use this default example to show a title, description, and two CTA buttons for the jumbotron component.
 
-<fwb-jumbotron-example />
+<ddtw-jumbotron-example />
 ```vue
 <template>
   <div
   >
-    <fwb-jumbotron
+    <ddtw-jumbotron
       header-text="We invest in the world’s potential"
       sub-text="Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth."
     >
@@ -64,12 +63,12 @@ Use this default example to show a title, description, and two CTA buttons for t
           Learn more
         </a>
       </div>
-    </fwb-jumbotron>
+    </ddtw-jumbotron>
   </div>
 </template>
 
 <script setup>
-import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
+import DdtwJumbotron from '/@/components/DdtwJumbotron/DdtwJumbotron.vue'
 </script>
 
 ```
@@ -77,12 +76,12 @@ import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
 ## Background image
 Use this jumbotron to apply a background image with a darkening opacity effect to improve readability.
 
-<fwb-jumbotron-background-image-example />
+<ddtw-jumbotron-background-image-example />
 ```vue
 <template>
   <div
   >
-    <fwb-jumbotron
+    <ddtw-jumbotron
       class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] dark:bg-gray-700 bg-gray-700 bg-blend-multiply"
       header-classes="text-white"
       sub-text-classes="text-gray-300 dark:text-gray-300"
@@ -118,12 +117,12 @@ Use this jumbotron to apply a background image with a darkening opacity effect t
           Learn more
         </a>
       </div>
-    </fwb-jumbotron>
+    </ddtw-jumbotron>
   </div>
 </template>
 
 <script setup>
-import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
+import DdtwJumbotron from '/@/components/DdtwJumbotron/DdtwJumbotron.vue'
 </script>
 
 ```
@@ -131,12 +130,12 @@ import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
 ## Featured video
 This component can be used to feature a video together with a heading title, description, and CTA buttons.
 
-<fwb-jumbotron-video-example />
+<ddtw-jumbotron-video-example />
 ```vue
 <template>
   <div
   >
-    <fwb-jumbotron
+    <ddtw-jumbotron
       class="lg:py-8 px-4 "
       header-classes="text-left"
       sub-text-classes="lg:px-0"
@@ -182,12 +181,12 @@ This component can be used to feature a video together with a heading title, des
           allowfullscreen
         />
       </div>
-    </fwb-jumbotron>
+    </ddtw-jumbotron>
   </div>
 </template>
 
 <script setup>
-import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
+import DdtwJumbotron from '/@/components/DdtwJumbotron/DdtwJumbotron.vue'
 </script>
 
 ```
@@ -195,12 +194,12 @@ import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
 ## Authentication form
 Use this component to show a sign in or register form as the first section of your website.
 
-<fwb-jumbotron-form-example />
+<ddtw-jumbotron-form-example />
 ```vue
 <template>
   <div
   >
-    <fwb-jumbotron
+    <ddtw-jumbotron
       class="lg:py-8 px-4 text-start "
       header-classes="text-left"
       sub-text-classes="lg:px-0"
@@ -298,12 +297,12 @@ Use this component to show a sign in or register form as the first section of yo
           </form>
         </div>
       </div>
-    </fwb-jumbotron>
+    </ddtw-jumbotron>
   </div>
 </template>
 
 <script setup>
-import FwbJumbotron from '@/components/FwbJumbotron/FwbJumbotron.vue'
+import DdtwJumbotron from '/@/components/DdtwJumbotron/DdtwJumbotron.vue'
 </script>
 
 ```

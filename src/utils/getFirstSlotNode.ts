@@ -3,7 +3,7 @@ import { flatten } from './flatten'
 
 // ref: https://github.com/TuSimple/naive-ui/blob/main/src/popover/src/Popover.tsx
 
-export function getFirstSlotVNode (
+export function getFirstSlotVNode(
   slots: Slots,
   slotName = 'default',
   props: unknown = undefined,
@@ -17,7 +17,8 @@ export function getFirstSlotVNode (
   // vue will normalize the slot, so slot must be an array
   if (slotContent.length === 1) {
     return slotContent[0]
-  } else {
+  }
+  else {
     console.warn('getFirstSlotVNode', `slot[${slotName}] should have exactly one child`)
     return null
   }

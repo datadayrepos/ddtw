@@ -1,12 +1,12 @@
 <script setup>
-import FwbHExampleLevel1 from './typography/heading/FwbHExampleLevel1.vue'
-import FwbHExampleLevel2 from './typography/heading/FwbHExampleLevel2.vue'
-import FwbHExampleLevel3 from './typography/heading/FwbHExampleLevel3.vue'
-import FwbHExampleLevel4 from './typography/heading/FwbHExampleLevel4.vue'
-import FwbHExampleLevel5 from './typography/heading/FwbHExampleLevel5.vue'
-import FwbHExampleLevel6 from './typography/heading/FwbHExampleLevel6.vue'
-import FwbHExampleColor from './typography/heading/FwbHExampleColor.vue'
-import FwbHExampleCustom from './typography/heading/FwbHExampleCustom.vue'
+import DdtwHExampleLevel1 from './typography/heading/DdtwHExampleLevel1.vue'
+import DdtwHExampleLevel2 from './typography/heading/DdtwHExampleLevel2.vue'
+import DdtwHExampleLevel3 from './typography/heading/DdtwHExampleLevel3.vue'
+import DdtwHExampleLevel4 from './typography/heading/DdtwHExampleLevel4.vue'
+import DdtwHExampleLevel5 from './typography/heading/DdtwHExampleLevel5.vue'
+import DdtwHExampleLevel6 from './typography/heading/DdtwHExampleLevel6.vue'
+import DdtwHExampleColor from './typography/heading/DdtwHExampleColor.vue'
+import DdtwHExampleCustom from './typography/heading/DdtwHExampleCustom.vue'
 </script>
 
 # Vue Heading - Flowbite
@@ -17,18 +17,18 @@ import FwbHExampleCustom from './typography/heading/FwbHExampleCustom.vue'
 
 Use the `tag="h1"` as the most important text element to indicate the title of your web page.
 
-
 ```vue
 <template>
-  <fwb-heading tag="h1">Heading 1</fwb-heading>
+  <DdtwHeading tag="h1">
+    Heading 1
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level1 />
-
+<ddtw-h-example-level1 />
 
 ## Heading two (H2)
 
@@ -36,15 +36,16 @@ The H2 tag can be used as subtitles of the page’s sections.
 
 ```vue
 <template>
-  <fwb-heading tag="h2">Heading 2</fwb-heading>
+  <DdtwHeading tag="h2">
+    Heading 2
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level2 />
-
+<ddtw-h-example-level2 />
 
 ## Heading three (H3)
 
@@ -52,15 +53,16 @@ Use the H3 tags inside sections that already have a H2 available.
 
 ```vue
 <template>
-  <fwb-heading tag="h3">Heading 3</fwb-heading>
+  <DdtwHeading tag="h3">
+    Heading 3
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level3 />
-
+<ddtw-h-example-level3 />
 
 ## Heading four (H4)
 
@@ -68,15 +70,16 @@ The H4 can be generally used after H2 and H3 tags are already present and you ne
 
 ```vue
 <template>
-  <fwb-heading tag="h4">Heading 4</fwb-heading>
+  <DdtwHeading tag="h4">
+    Heading 4
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level4 />
-
+<ddtw-h-example-level4 />
 
 ## Heading five (H5)
 
@@ -84,15 +87,16 @@ The H5 tag is most often used in longer articles with other heading already avai
 
 ```vue
 <template>
-  <fwb-heading tag="h5">Heading 5</fwb-heading>
+  <DdtwHeading tag="h5">
+    Heading 5
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level5 />
-
+<ddtw-h-example-level5 />
 
 ## Heading six (H6)
 
@@ -100,15 +104,16 @@ Using the H6 tag is quite rare because it means that you’ve already used all h
 
 ```vue
 <template>
-  <fwb-heading tag="h6">Heading 6</fwb-heading>
+  <DdtwHeading tag="h6">
+    Heading 6
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-level6 />
-
+<ddtw-h-example-level6 />
 
 ## Color
 
@@ -116,28 +121,30 @@ Use the `color` prop to set the text color.
 
 ```vue
 <template>
-  <fwb-heading color="text-green-400">Green eading</fwb-heading>
+  <DdtwHeading color="text-green-400">
+    Green eading
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-color />
-
+<ddtw-h-example-color />
 
 ## Custom classes
 
 Use the `class` attribute to apply the tailwind classes.
 
-
 ```vue
 <template>
-  <fwb-heading class="!text-xl italic underline">Custom heading</fwb-heading>
+  <DdtwHeading class="!text-xl italic underline">
+    Custom heading
+  </DdtwHeading>
 </template>
 
 <script setup>
-import { FwbHeading } from 'flowbite-vue'
+import { DdtwHeading } from '@datadayrepos/ddtw-vue'
 </script>
 ```
-<fwb-h-example-custom />
+<ddtw-h-example-custom />

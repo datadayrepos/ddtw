@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import { defineConfig } from 'vitepress'
 
 function buildSidebar() {
@@ -23,12 +24,17 @@ function buildSidebar() {
       collapsible: true,
       items: [
         ...getTypography(),
-      ]
+      ],
     },
     {
       text: 'Utils',
       collapsible: true,
       items: [...getUtils()],
+    },
+    {
+      text: 'PLAYGROUND',
+      collapsible: true,
+      items: [...getPlayground()],
     },
   ]
 }
@@ -78,18 +84,24 @@ function getFormComponents() {
 
 function getUtils() {
   return [
-    { text: 'Flowbite Themable', link: '/components/flowbiteThemable/flowbiteThemable.md' },
+    { text: 'Flowbite Themable', link: '/components/themable/themable.md' },
     { text: 'Toast Provider', link: '/components/toastProvider/toastProvider.md' },
   ]
 }
 
 function getTypography() {
   return [
-    { text: "Blockquote", link: '/components/blockquote' },
+    { text: 'Blockquote', link: '/components/blockquote' },
     { text: 'Heading', link: '/components/heading' },
     { text: 'Paragraph', link: '/components/paragraph' },
     { text: 'Image', link: '/components/image' },
-    { text: 'Link', link: '/components/link' }
+    { text: 'Link', link: '/components/link' },
+  ]
+}
+
+function getPlayground() {
+  return [
+    { text: 'Playground', link: '/components/xplayground.md' },
   ]
 }
 
@@ -98,45 +110,33 @@ function getTypography() {
  * https://github.com/vuejs/vitepress/blob/master/docs/.vitepress/config.js
  */
 export default defineConfig({
-  title: 'Flowbite Vue 3',
+  title: 'Ddtw Vue 3',
   cleanUrls: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/svg', href: '/assets/logo.svg' }],
-    [
-      'script',
-      {},
-      `
-      // Fathom - beautiful, simple website analytics
-      (function(f, a, t, h, o, m) {
-        a[h] =
-          a[h] ||
-          function() {
-            (a[h].q = a[h].q || []).push(arguments);
-          };
-        (o = f.createElement("script")),
-          (m = f.getElementsByTagName("script")[0]);
-        o.async = 1;
-        o.src = t;
-        o.id = "fathom-script";
-        m.parentNode.insertBefore(o, m);
-      })(document, window, "https://cdn.usefathom.com/tracker.js", "fathom");
-      fathom("set", "siteId", "MPNTKCVJ");
-      fathom("trackPageview");
-      // / Fathom
-      `,
-    ],
+    ['link', { rel: 'icon', type: 'image/svg', href: '/assets/a_favicon.png' }],
+
   ],
   themeConfig: {
     sidebar: buildSidebar(),
-    logo: '/assets/logo.svg',
+    logo: '/assets/a_favicon.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/themesberg/flowbite-vue' },
-      { icon: 'discord', link: 'https://discord.gg/4eeurUVvTy' },
+
     ],
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023 Flowbite™',
+      copyright: 'Copyright © DataDayRepos',
+    },
+  },
+  // Vite-specific configuration
+  vite: {
+    server: {
+      port: Number.parseInt('5172', 10) || 3000, // Use the environment variable or default to 3000
+      host: '0.0.0.0',
+      https: {
+        key: fs.readFileSync('./.cert/key.pem'),
+        cert: fs.readFileSync('./.cert/cert.pem'),
+      },
     },
   },
 })

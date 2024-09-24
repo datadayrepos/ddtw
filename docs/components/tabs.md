@@ -1,9 +1,9 @@
 <script setup>
-import FwbTabsExample from './tabs/examples/FwbTabsExample.vue'
-import FwbTabsExampleInteraction from './tabs/examples/FwbTabsExampleInteraction.vue'
-import FwbTabsExampleDirective from './tabs/examples/FwbTabsExampleDirective.vue'
-import FwbTabsExamplePills from './tabs/examples/FwbTabsExamplePills.vue'
-import FwbTabsExampleUnderline from './tabs/examples/FwbTabsExampleUnderline.vue'
+import DdtwTabsExample from './tabs/examples/DdtwTabsExample.vue'
+import DdtwTabsExampleInteraction from './tabs/examples/DdtwTabsExampleInteraction.vue'
+import DdtwTabsExampleDirective from './tabs/examples/DdtwTabsExampleDirective.vue'
+import DdtwTabsExamplePills from './tabs/examples/DdtwTabsExamplePills.vue'
+import DdtwTabsExampleUnderline from './tabs/examples/DdtwTabsExampleUnderline.vue'
 </script>
 
 # Vue Tabs - Flowbite
@@ -20,28 +20,28 @@ The tabs component can be used either as an extra navigational hierarchy complem
 
 ## Prop - variant (default)
 
-<fwb-tabs-example />
+<ddtw-tabs-example />
 ```vue
 <template>
-  <fwb-tabs v-model="activeTab" class="p-5">
-    <fwb-tab name="first" title="First">
+  <ddtw-tabs v-model="activeTab" class="p-5">
+    <ddtw-tab name="first" title="First">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="second" title="Second">
+    </ddtw-tab>
+    <ddtw-tab name="second" title="Second">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="third" title="Third">
+    </ddtw-tab>
+    <ddtw-tab name="third" title="Third">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="fourth" title="Fourth" disabled>
+    </ddtw-tab>
+    <ddtw-tab name="fourth" title="Fourth" disabled>
       Lorem ipsum dolor...
-    </fwb-tab>
-  </fwb-tabs>
+    </ddtw-tab>
+  </ddtw-tabs>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbTab, FwbTabs } from 'flowbite-vue'
+import { DdtwTab, DdtwTabs } from '@datadayrepos/ddtw-vue'
 
 const activeTab = ref('first')
 </script>
@@ -49,28 +49,28 @@ const activeTab = ref('first')
 
 ## Prop - variant (underline)
 
-<fwb-tabsExample-underline />
+<ddtw-tabsExample-underline />
 ```vue
 <template>
-  <fwb-tabs v-model="activeTab" variant="underline" class="p-5">
-    <fwb-tab name="first" title="First">
+  <ddtw-tabs v-model="activeTab" variant="underline" class="p-5">
+    <ddtw-tab name="first" title="First">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="second" title="Second">
+    </ddtw-tab>
+    <ddtw-tab name="second" title="Second">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="third" title="Third">
+    </ddtw-tab>
+    <ddtw-tab name="third" title="Third">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="fourth" title="Fourth" disabled>
+    </ddtw-tab>
+    <ddtw-tab name="fourth" title="Fourth" disabled>
       Lorem ipsum dolor...
-    </fwb-tab>
-  </fwb-tabs>
+    </ddtw-tab>
+  </ddtw-tabs>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbTab, FwbTabs } from 'flowbite-vue'
+import { DdtwTab, DdtwTabs } from '@datadayrepos/ddtw-vue'
 
 const activeTab = ref('first')
 </script>
@@ -78,29 +78,29 @@ const activeTab = ref('first')
 
 ## Prop - variant (pills)
 
-<fwb-tabs-example-pills />
+<ddtw-tabs-example-pills />
 ```vue
 <template>
-  <fwb-tabs v-model="activeTab" variant="pills" class="p-5">
-    <fwb-tab name="first" title="First" >
+  <ddtw-tabs v-model="activeTab" variant="pills" class="p-5">
+    <ddtw-tab name="first" title="First" >
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="second" title="Second">
+    </ddtw-tab>
+    <ddtw-tab name="second" title="Second">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="third" title="Third">
+    </ddtw-tab>
+    <ddtw-tab name="third" title="Third">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="fourth" title="Fourth" disabled>
+    </ddtw-tab>
+    <ddtw-tab name="fourth" title="Fourth" disabled>
       Lorem ipsum dolor...
-    </fwb-tab>
-  </fwb-tabs>
+    </ddtw-tab>
+  </ddtw-tabs>
  </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbTab, FwbTabs } from 'flowbite-vue'
+import { DdtwTab, DdtwTabs } from '@datadayrepos/ddtw-vue'
 
 const activeTab = ref('first')
 </script>
@@ -110,28 +110,28 @@ const activeTab = ref('first')
 
 Use this props if you want to control which directive to use for rendering every tab content
 
-<fwb-tabs-example-directive />
+<ddtw-tabs-example-directive />
 ```vue
 <template>
-  <fwb-tabs v-model="activeTab" directive="show" class="p-5">
-    <fwb-tab name="first" title="First">
+  <ddtw-tabs v-model="activeTab" directive="show" class="p-5">
+    <ddtw-tab name="first" title="First">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="second" title="Second">
+    </ddtw-tab>
+    <ddtw-tab name="second" title="Second">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="third" title="Third">
+    </ddtw-tab>
+    <ddtw-tab name="third" title="Third">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="fourth" title="Fourth" disabled>
+    </ddtw-tab>
+    <ddtw-tab name="fourth" title="Fourth" disabled>
       Lorem ipsum dolor...
-    </fwb-tab>
-  </fwb-tabs>
+    </ddtw-tab>
+  </ddtw-tabs>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbTab, FwbTabs } from 'flowbite-vue'
+import { DdtwTab, DdtwTabs } from '@datadayrepos/ddtw-vue'
 
 const activeTab = ref('first')
 </script>
@@ -141,28 +141,28 @@ const activeTab = ref('first')
 
 You can add `@click:pane` to Tabs component to intercept click on tab pane.
 
-<fwb-tabs-example-interaction />
+<ddtw-tabs-example-interaction />
 ```vue
 <template>
-  <fwb-tabs @click:pane="handlePaneClick" v-model="activeTab" class="p-5">
-    <fwb-tab name="first" title="First">
+  <ddtw-tabs @click:pane="handlePaneClick" v-model="activeTab" class="p-5">
+    <ddtw-tab name="first" title="First">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="second" title="Second">
+    </ddtw-tab>
+    <ddtw-tab name="second" title="Second">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="third" title="Third">
+    </ddtw-tab>
+    <ddtw-tab name="third" title="Third">
       Lorem ipsum dolor...
-    </fwb-tab>
-    <fwb-tab name="fourth" title="Fourth" disabled>
+    </ddtw-tab>
+    <ddtw-tab name="fourth" title="Fourth" disabled>
       Lorem ipsum dolor...
-    </fwb-tab>
-  </fwb-tabs>
+    </ddtw-tab>
+  </ddtw-tabs>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbTab, FwbTabs } from 'flowbite-vue'
+import { DdtwTab, DdtwTabs } from '@datadayrepos/ddtw-vue'
 
 const activeTab = ref('first')
 

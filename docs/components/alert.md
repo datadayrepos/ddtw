@@ -1,11 +1,11 @@
 <script setup>
-import FwbAlertExampleBorder from './alert/examples/FwbAlertExampleBorder.vue'
-import FwbAlertExampleBorderAccent from './alert/examples/FwbAlertExampleBorderAccent.vue'
-import FwbAlertExampleCustomContent from './alert/examples/FwbAlertExampleCustomContent.vue'
-import FwbAlertExampleDismissable from './alert/examples/FwbAlertExampleDismissable.vue'
-import FwbAlertExampleIcon from './alert/examples/FwbAlertExampleIcon.vue'
-import FwbAlertExampleList from './alert/examples/FwbAlertExampleList.vue'
-import FwbAlertExampleType from './alert/examples/FwbAlertExampleType.vue'
+import DdtwAlertExampleBorder from './alert/examples/DdtwAlertExampleBorder.vue'
+import DdtwAlertExampleBorderAccent from './alert/examples/DdtwAlertExampleBorderAccent.vue'
+import DdtwAlertExampleCustomContent from './alert/examples/DdtwAlertExampleCustomContent.vue'
+import DdtwAlertExampleDismissable from './alert/examples/DdtwAlertExampleDismissable.vue'
+import DdtwAlertExampleIcon from './alert/examples/DdtwAlertExampleIcon.vue'
+import DdtwAlertExampleList from './alert/examples/DdtwAlertExampleList.vue'
+import DdtwAlertExampleType from './alert/examples/DdtwAlertExampleType.vue'
 </script>
 
 # Vue Alert - Flowbite
@@ -16,195 +16,195 @@ The alert component can be used to provide information to your users such as suc
 ## Default alert
 Use the following examples of alert components to show messages as feedback to your users.
 
-<fwb-alert-example-type />
+<ddtw-alert-example-type />
 ```vue
 <template>
   <div class="grid gap-2">
-    <fwb-alert type="info">
+    <ddtw-alert type="info">
       Info alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert type="warning">
+    </ddtw-alert>
+    <ddtw-alert type="warning">
       Warning alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert type="danger">
+    </ddtw-alert>
+    <ddtw-alert type="danger">
       Danger alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert type="dark">
+    </ddtw-alert>
+    <ddtw-alert type="dark">
       Dark alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert type="success">
+    </ddtw-alert>
+    <ddtw-alert type="success">
       Success alert! Change a few things up and try submitting again.
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Alerts with icon
 You can also include a descriptive icon to complement the message inside the alert component with the following example.
 
-<fwb-alert-example-icon />
+<ddtw-alert-example-icon />
 ```vue
 <template>
   <div class="grid gap-2">
-    <fwb-alert icon type="info">
+    <ddtw-alert icon type="info">
       Info alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert icon type="warning">
+    </ddtw-alert>
+    <ddtw-alert icon type="warning">
       Warning alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert icon type="danger">
+    </ddtw-alert>
+    <ddtw-alert icon type="danger">
       Danger alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert icon type="dark">
+    </ddtw-alert>
+    <ddtw-alert icon type="dark">
       Dark alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert icon type="success">
+    </ddtw-alert>
+    <ddtw-alert icon type="success">
       Success alert! Change a few things up and try submitting again.
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Bordered alerts
 Use this example to add a border accent to the alert component instead of just a plain background.
 
-<fwb-alert-example-border />
+<ddtw-alert-example-border />
 ```vue
 <template>
   <div class="grid gap-2">
-    <fwb-alert border type="info">
+    <ddtw-alert border type="info">
       Info alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert border type="warning">
+    </ddtw-alert>
+    <ddtw-alert border type="warning">
       Warning alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert border type="danger">
+    </ddtw-alert>
+    <ddtw-alert border type="danger">
       Danger alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert border type="dark">
+    </ddtw-alert>
+    <ddtw-alert border type="dark">
       Dark alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert border type="success">
+    </ddtw-alert>
+    <ddtw-alert border type="success">
       Success alert! Change a few things up and try submitting again.
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Border accent
 Use this example to add a border accent on top of the alert component for further visual distinction.
 
-<fwb-alert-example-border-accent />
+<ddtw-alert-example-border-accent />
 ```vue
 <template>
   <div class="vp-raw grid gap-2">
-    <fwb-alert class="border-t-4 rounded-none" icon type="info">
+    <ddtw-alert class="border-t-4 rounded-none" icon type="info">
       Info alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert class="border-t-4 rounded-none" icon type="warning">
+    </ddtw-alert>
+    <ddtw-alert class="border-t-4 rounded-none" icon type="warning">
       Warning alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert class="border-t-4 rounded-none" icon type="danger">
+    </ddtw-alert>
+    <ddtw-alert class="border-t-4 rounded-none" icon type="danger">
       Info Danger alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert class="border-t-4 rounded-none" icon type="dark">
+    </ddtw-alert>
+    <ddtw-alert class="border-t-4 rounded-none" icon type="dark">
       Info Dark alert! Change a few things up and try submitting again.
-    </fwb-alert>
-    <fwb-alert class="border-t-4 rounded-none" icon type="success">
+    </ddtw-alert>
+    <ddtw-alert class="border-t-4 rounded-none" icon type="success">
       Success alert! Change a few things up and try submitting again.
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Alerts with list
 Use this example to show a list and a description inside an alert component.
 
-<fwb-alert-example-list />
+<ddtw-alert-example-list />
 ```vue
 <template>
   <div class="vp-raw grid gap-2">
-    <fwb-alert type="info">
+    <ddtw-alert type="info">
       <span class="font-medium">Ensure that these requirements are met:</span>
       <ul class="mt-1.5 ml-4 list-disc list-inside">
         <li>At least 10 characters (and up to 100 characters)</li>
         <li>At least one lowercase character</li>
         <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
       </ul>
-    </fwb-alert>
-    <fwb-alert type="danger">
+    </ddtw-alert>
+    <ddtw-alert type="danger">
       <span class="font-medium">Ensure that these requirements are met:</span>
       <ul class="mt-1.5 ml-4 list-disc list-inside">
         <li>At least 10 characters (and up to 100 characters)</li>
         <li>At least one lowercase character</li>
         <li>Inclusion of at least one special character, e.g., ! @ # ?</li>
       </ul>
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Dismissing
 Use the following alert elements that are also dismissable.
 
-<fwb-alert-example-dismissable />
+<ddtw-alert-example-dismissable />
 ```vue
 <script setup>
-import { Alert } from 'flowbite-vue'
+import { Alert } from '@datadayrepos/ddtw-vue'
 </script>
 <template>
   <div class="vp-raw grid gap-2">
-    <fwb-alert closable icon type="info">
+    <ddtw-alert closable icon type="info">
       Info
-    </fwb-alert>
-    <fwb-alert closable icon type="warning">
+    </ddtw-alert>
+    <ddtw-alert closable icon type="warning">
       Warning
-    </fwb-alert>
-    <fwb-alert closable icon type="danger">
+    </ddtw-alert>
+    <ddtw-alert closable icon type="danger">
       Danger
-    </fwb-alert>
-    <fwb-alert closable icon type="dark">
+    </ddtw-alert>
+    <ddtw-alert closable icon type="dark">
       Dark
-    </fwb-alert>
-    <fwb-alert closable icon type="success">
+    </ddtw-alert>
+    <ddtw-alert closable icon type="success">
       Success
-    </fwb-alert>
+    </ddtw-alert>
   </div>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 
 ## Additional content
 The following alert components can be used if you wish to disclose more information inside the element.
 
-<fwb-alert-example-custom-content />
+<ddtw-alert-example-custom-content />
 
 ```vue
 <template>
-  <fwb-alert type="info">
+  <DdtwAlert type="info">
     <template #icon>
       <svg
         class="flex-shrink-0 w-4 h-4 mr-2"
@@ -253,11 +253,11 @@ The following alert components can be used if you wish to disclose more informat
         </button>
       </div>
     </template>
-  </fwb-alert>
+  </DdtwAlert>
 </template>
 
 <script setup>
-import { FwbAlert } from 'flowbite-vue'
+import { DdtwAlert } from '@datadayrepos/ddtw-vue'
 </script>
 ```
 

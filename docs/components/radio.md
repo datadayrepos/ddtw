@@ -1,11 +1,11 @@
 <script setup>
-import FwbRadioExample from './radio/examples/FwbRadioExample.vue'
-import FwbRadioExampleBordered from './radio/examples/FwbRadioExampleBordered.vue'
-import FwbRadioExampleDisabled from './radio/examples/FwbRadioExampleDisabled.vue'
-import FwbRadioExampleInline from './radio/examples/FwbRadioExampleInline.vue'
-import FwbRadioExampleLink from './radio/examples/FwbRadioExampleLink.vue'
-import FwbRadioExampleList from './radio/examples/FwbRadioExampleList.vue'
-import FwbRadioExampleListHorizontal from './radio/examples/FwbRadioExampleListHorizontal.vue'
+import DdtwRadioExample from './radio/examples/DdtwRadioExample.vue'
+import DdtwRadioExampleBordered from './radio/examples/DdtwRadioExampleBordered.vue'
+import DdtwRadioExampleDisabled from './radio/examples/DdtwRadioExampleDisabled.vue'
+import DdtwRadioExampleInline from './radio/examples/DdtwRadioExampleInline.vue'
+import DdtwRadioExampleLink from './radio/examples/DdtwRadioExampleLink.vue'
+import DdtwRadioExampleList from './radio/examples/DdtwRadioExampleList.vue'
+import DdtwRadioExampleListHorizontal from './radio/examples/DdtwRadioExampleListHorizontal.vue'
 </script>
 
 # Vue Toggle Radio - Flowbite
@@ -20,16 +20,16 @@ Original reference: [https://flowbite.com/docs/forms/range/](https://flowbite.co
 
 ## Radio examples
 
-<fwb-radio-example />
+<ddtw-radio-example />
 ```vue
 <template>
-  <fwb-radio v-model="picked" name="radio" label="Radio 1" value="one" />
-  <fwb-radio v-model="picked" name="radio" label="Radio 2" value="two" />
+  <ddtw-radio v-model="picked" name="radio" label="Radio 1" value="one" />
+  <ddtw-radio v-model="picked" name="radio" label="Radio 2" value="two" />
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbRadio } from 'flowbite-vue'
+import { DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref()
 </script>
@@ -37,17 +37,17 @@ const picked = ref()
 
 ## Disabled Radio
 
-<fwb-radio-example-disabled />
+<ddtw-radio-example-disabled />
 ```vue
 <template>
-  <fwb-radio
+  <ddtw-radio
     v-model="picked"
     disabled
     label="Disabled radio"
     name="radio-disabled"
     value="one"
   />
-  <fwb-radio
+  <ddtw-radio
     v-model="picked"
     disabled
     label="Disabled checked"
@@ -58,7 +58,7 @@ const picked = ref()
 
 <script setup>
 import { ref } from 'vue'
-import { FwbRadio } from 'flowbite-vue'
+import { DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref('two')
 </script>
@@ -66,52 +66,52 @@ const picked = ref('two')
 
 ## Radio list group
 
-<fwb-radio-example-list />
+<ddtw-radio-example-list />
 ```vue
 <template>
-  <fwb-p class="mb-2">
+  <ddtw-p class="mb-2">
     Technology {{ picked }}
-  </fwb-p>
+  </ddtw-p>
 
-  <fwb-list-group>
-    <fwb-list-group-item>
-      <fwb-radio
+  <ddtw-list-group>
+    <ddtw-list-group-item>
+      <ddtw-radio
         v-model="picked"
         label="Svelte"
         name="list-radio"
         value="Svelte"
       />
-    </fwb-list-group-item>
-    <fwb-list-group-item>
-      <fwb-radio
+    </ddtw-list-group-item>
+    <ddtw-list-group-item>
+      <ddtw-radio
         v-model="picked"
         label="Vue JS"
         name="list-radio"
         value="Vue JS"
       />
-    </fwb-list-group-item>
-    <fwb-list-group-item>
-      <fwb-radio
+    </ddtw-list-group-item>
+    <ddtw-list-group-item>
+      <ddtw-radio
         v-model="picked"
         label="React"
         name="list-radio"
         value="React"
       />
-    </fwb-list-group-item>
-    <fwb-list-group-item>
-      <fwb-radio
+    </ddtw-list-group-item>
+    <ddtw-list-group-item>
+      <ddtw-radio
         v-model="picked"
         label="Angular"
         name="list-radio"
         value="Angular"
       />
-    </fwb-list-group-item>
-  </fwb-list-group>
+    </ddtw-list-group-item>
+  </ddtw-list-group>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbListGroup, FwbListGroupItem, FwbP, FwbRadio } from 'flowbite-vue'
+import { DdtwListGroup, DdtwListGroupItem, DdtwP, DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref('Vue JS')
 </script>
@@ -119,15 +119,15 @@ const picked = ref('Vue JS')
 
 ## Horizontal list group
 
-<fwb-radio-example-list-horizontal />
+<ddtw-radio-example-list-horizontal />
 ```vue
 <template>
-  <fwb-p class="mb-2">
+  <ddtw-p class="mb-2">
     Technology {{ picked }}
-  </fwb-p>
+  </ddtw-p>
   <ul class="items-center w-full text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white">
     <li class="w-full !m-0 pl-3 flex border-gray-200 rounded-t-lg dark:border-gray-600">
-      <fwb-radio
+      <ddtw-radio
         v-model="picked"
         label="Svelte"
         name="radio-horizontal"
@@ -135,7 +135,7 @@ const picked = ref('Vue JS')
       />
     </li>
     <li class="w-full !m-0 pl-3 flex border-gray-200 rounded-t-lg dark:border-gray-600">
-      <fwb-radio
+      <ddtw-radio
         v-model="picked"
         label="Vue JS"
         name="radio-horizontal"
@@ -143,7 +143,7 @@ const picked = ref('Vue JS')
       />
     </li>
     <li class="w-full !m-0 pl-3 flex border-gray-200 rounded-t-lg dark:border-gray-600">
-      <fwb-radio
+      <ddtw-radio
         v-model="picked"
         label="React"
         name="radio-horizontal"
@@ -151,7 +151,7 @@ const picked = ref('Vue JS')
       />
     </li>
     <li class="w-full !m-0 pl-3 flex border-gray-200 rounded-t-lg dark:border-gray-600">
-      <fwb-radio
+      <ddtw-radio
         v-model="picked"
         label="Angular"
         name="radio-horizontal"
@@ -163,7 +163,7 @@ const picked = ref('Vue JS')
 
 <script setup>
 import { ref } from 'vue'
-import { FwbP, FwbRadio } from 'flowbite-vue'
+import { DdtwP, DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref('svelte')
 </script>
@@ -171,20 +171,20 @@ const picked = ref('svelte')
 
 ## Inline Radio
 
-<fwb-radio-example-inline />
+<ddtw-radio-example-inline />
 ```vue
 <template>
   <div class="flex w-96">
-    <fwb-radio v-model="picked" label="Inline 1" value="first" />
-    <fwb-radio v-model="picked" label="Inline 2" value="second" />
-    <fwb-radio v-model="picked" label="Inline 3" value="third" />
-    <fwb-radio v-model="picked" label="Inline 4" value="fourth" />
+    <ddtw-radio v-model="picked" label="Inline 1" value="first" />
+    <ddtw-radio v-model="picked" label="Inline 2" value="second" />
+    <ddtw-radio v-model="picked" label="Inline 3" value="third" />
+    <ddtw-radio v-model="picked" label="Inline 4" value="fourth" />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbRadio } from 'flowbite-vue'
+import { DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref('first')
 </script>
@@ -192,20 +192,20 @@ const picked = ref('first')
 
 ## Radio with a link
 
-<fwb-radio-example-link />
+<ddtw-radio-example-link />
 ```vue
 <template>
-  <fwb-radio v-model="picked" name="with-link" value="first">
+  <ddtw-radio v-model="picked" name="with-link" value="first">
     I agree with the
-    <fwb-a class="ml-1" href="#">
+    <ddtw-a class="ml-1" href="#">
       terms and conditions
-    </fwb-a>.
-  </fwb-radio>
+    </ddtw-a>.
+  </ddtw-radio>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbA, FwbRadio } from 'flowbite-vue'
+import { DdtwA, DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref()
 </script>
@@ -213,22 +213,22 @@ const picked = ref()
 
 ## Bordered Radio
 
-<fwb-radio-example-bordered />
+<ddtw-radio-example-bordered />
 ```vue
 <template>
   <div class="grid grid-cols-2 gap-6">
     <div class="flex items-center p-2 border border-gray-200 rounded dark:border-gray-700">
-      <fwb-radio v-model="picked" label="Radio 1" name="radio-bordered" value="one" />
+      <ddtw-radio v-model="picked" label="Radio 1" name="radio-bordered" value="one" />
     </div>
     <div class="flex items-center p-2 border border-gray-200 rounded dark:border-gray-700">
-      <fwb-radio v-model="picked" label="Radio 2" name="radio-bordered" value="two" />
+      <ddtw-radio v-model="picked" label="Radio 2" name="radio-bordered" value="two" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-import { FwbRadio } from 'flowbite-vue'
+import { DdtwRadio } from '@datadayrepos/ddtw-vue'
 
 const picked = ref('one')
 </script>
